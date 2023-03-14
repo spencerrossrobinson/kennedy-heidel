@@ -7,9 +7,10 @@ import {
   CarouselCaption,
   Container,
 } from "reactstrap";
+import { Bounce } from "react-awesome-reveal";
 import slideOne from "../imgs/home/handNcoffe.jpg";
 import slideTwo from "../imgs/home/laptopNcoffee.jpg";
-import slideThree from "../imgs/home/plantNlaptop.jpg";
+import slideThree from "../imgs/home/cactusplant.jpg";
 
 const items = [
   {
@@ -64,11 +65,14 @@ const HomeCar = (args) => {
         className="carousel-item"
       >
         <img
+          style={{ opacity: 0.5 }}
           src={item.src}
           alt={item.altText}
           //   className="img-fluid"
         />
-        <h1 className="main-text">{item.caption}</h1>
+        <Bounce className="main-text">
+          <h1 className="sub-text">{item.caption}</h1>
+        </Bounce>
       </CarouselItem>
     );
   });

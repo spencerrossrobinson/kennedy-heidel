@@ -1,11 +1,16 @@
 .header-background {
-  background: linear-gradient(to right, #75ca68, 50%, white);
+  background: linear-gradient(to top, #75ca68, 30%, white);
+}
+.reverse-header-background {
+  background: linear-gradient(to bottom, #75ca68, 30%, white);
 }
 .main-text {
   position: absolute;
   top: 30%;
   width: 100%;
-  color: #75ca68;
+  color: black;
+}
+.sub-text {
   font-size: 120px;
 }
 @media (max-width: 575px) {
