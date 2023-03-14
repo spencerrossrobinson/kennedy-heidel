@@ -5,8 +5,8 @@
   position: absolute;
   top: 30%;
   width: 100%;
-  color: #fff;
-  font-size: 90px;
+  color: #75ca68;
+  font-size: 120px;
 }
 @media (max-width: 575px) {
   .carousel-item {

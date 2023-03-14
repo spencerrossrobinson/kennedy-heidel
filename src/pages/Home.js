@@ -7,7 +7,7 @@ const Home = () => {
     <div>
       <Container fluid>
         <Row style={{ height: 300 }} className="header-background">
-          <Col className="mt-5 ms-5">
+          <Col className="mt-5 ms-5" style={{ color: "black" }}>
             <h1>Kennedy Heidel</h1>
             <h1>Copywriter in Richmond, Virginia</h1>
             <h1>An eye for design </h1>
