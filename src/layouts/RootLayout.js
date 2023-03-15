@@ -18,7 +18,12 @@ const RootLayout = () => {
   return (
     <div>
       <header>
-        <Navbar className="custom-nav" expand="md">
+        <Navbar
+          className="custom-nav"
+          expand="md"
+          fixed="top"
+          style={{ background: "white" }}
+        >
           <NavbarBrand href="/">Kennedy Heidel</NavbarBrand>
           <NavbarText style={{ color: "#4EB03E" }}>Copywriter.</NavbarText>
           <NavbarToggler onClick={toggle} />

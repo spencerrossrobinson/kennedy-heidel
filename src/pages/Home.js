@@ -1,13 +1,15 @@
 import { Col, Container, Row } from "reactstrap";
 import HomeCar from "../components/HomeCar";
+import HomeHeader from "../components/HomeHeader";
 import "../css/home.css";
 import { Fade } from "react-awesome-reveal";
+import plant from "../imgs/home/right-plant.jpg";
 
 const Home = () => {
   return (
     <div>
-      <Container fluid>
-        <Row style={{ height: 300 }} className="header-background">
+      <Container fluid className="p-0 m-0">
+        <Row style={{ height: 300 }} className="header-background mt-5">
           <Col className="mt-5 ms-5" style={{ color: "black" }}>
             <Fade cascade>
               <h1 style={{ fontSize: 75, fontWeight: 700, fontStyle: "bold" }}>
@@ -26,6 +28,7 @@ const Home = () => {
         </Row>
         <Row className="bottom-header-background">
           <Col className="text-center zoom p-5 ms-5 me-3">
+            <img src={plant} alt="plant" className="w-50" />
             <h2 className="mt-5" style={{ fontWeight: 700 }}>
               A successful copywriter leading the way
             </h2>
@@ -40,7 +43,9 @@ const Home = () => {
             </p>
           </Col>
         </Row>
-        <Row className="header-background" style={{ height: 150 }}></Row>
+        <Row className="">
+          <HomeHeader />
+        </Row>
         <Row className="">
           <HomeCar />
         </Row>

@@ -1,8 +1,8 @@
 .header-background {
-  background: linear-gradient(to top, #9eda95, 30%, white);
+  background: linear-gradient(to top, #bae4b4, 30%, white);
 }
 .bottom-header-background {
-  background: linear-gradient(to bottom, #9eda95, 90%, white);
+  background: linear-gradient(to bottom, #bae4b4, 90%, white);
 }
 .reverse-header-background {
   background: #9eda95;
