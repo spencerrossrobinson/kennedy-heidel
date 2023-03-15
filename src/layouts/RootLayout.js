@@ -30,13 +30,13 @@ const RootLayout = () => {
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ms-auto" navbar>
               <NavItem>
-                <NavLink to="/" className="nav-link">
-                  HOME
+                <NavLink to="/about" className="nav-link">
+                  ABOUT
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/about" className="nav-link">
-                  ABOUT
+                <NavLink to="/gallery" className="nav-link">
+                  GALLERY
                 </NavLink>
               </NavItem>
             </Nav>

@@ -1,11 +1,16 @@
 .header-background {
-  background: linear-gradient(to top, #bae4b4, 30%, white);
+  /* background: linear-gradient(to bottom, #2d6a25, 95%, white); */
+  background: #2d6a25;
 }
 .bottom-header-background {
-  background: linear-gradient(to bottom, #bae4b4, 90%, white);
+  /* background: linear-gradient(to top, #2d6a25, 40%, white); */
+  background: #2d6a25;
 }
-.reverse-header-background {
-  background: #9eda95;
+.top-header-background {
+  background: linear-gradient(white, #2d6a25, white);
+}
+.z-background {
+  background: #91d586;
 }
 .zoom {
   transition: 0.5s;
@@ -17,12 +22,12 @@
 }
 .main-text {
   position: absolute;
-  top: 30%;
+  top: 20%;
   width: 100%;
   color: black;
 }
 .sub-text {
-  font-size: 80px;
+  font-size: 150px;
 }
 @media (max-width: 575px) {
   .carousel-item {
@@ -38,6 +43,9 @@
   .main-card {
     height: 400px;
   }
+  .sub-text {
+    font-size: 75px;
+  }
 }
 @media (min-width: 576px) {
   .carousel-item {
@@ -49,6 +57,9 @@
     left: 0;
     min-width: 100%;
     height: 500px;
+  }
+  .sub-text {
+    font-size: 100px;
   }
 }
 @media (min-width: 768px) {
@@ -64,6 +75,9 @@
   }
   .main-card {
     height: 500px;
+  }
+  .sub-text {
+    font-size: 150px;
   }
 }
 @media (min-width: 992px) {

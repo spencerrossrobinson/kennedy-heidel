@@ -62,12 +62,14 @@ const HomeCar = (args) => {
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
         key={item.src}
-        className="carousel-item"
+
+        // className="carousel-item"
       >
         <img
-          style={{ opacity: 0.5 }}
+          style={{ opacity: 0.5, borderRadius: 50, maxHeight: 400 }}
           src={item.src}
           alt={item.altText}
+          className="w-100"
           //   className="img-fluid"
         />
         <Bounce className="main-text">
@@ -83,8 +85,8 @@ const HomeCar = (args) => {
       next={next}
       previous={previous}
       {...args}
-      className="carousel text-center m-0 p-0"
-      style={{ margin: 0 }}
+      className="text-center"
+      style={{ maxHeight: 400 }}
     >
       <CarouselIndicators
         items={items}
