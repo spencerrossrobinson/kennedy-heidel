@@ -11,17 +11,24 @@ const Home = () => {
           <Col className="mt-5 ms-5" style={{ color: "black" }}>
             <Fade cascade>
               <h1 style={{ fontSize: 75, fontWeight: 700, fontStyle: "bold" }}>
-                Kennedy Heidel, Copywriter in Richmond, Virginia
+                Kennedy Heidel
               </h1>
-              <h4 className=" mt-3" style={{ fontStyle: "italic" }}>
-                An eye for design
+              <h1 style={{ fontWeight: 700 }}>Copywriter</h1>
+              <h1 style={{ fontWeight: 700 }}>Richmond, Virginia</h1>
+              <h4
+                className=" mt-3 mb-5"
+                style={{ fontStyle: "italic", fontWeight: 700 }}
+              >
+                Juggling Words, Well placed Pun, Eye for Design
               </h4>
             </Fade>
           </Col>
         </Row>
-        <Row className="reverse-header-background">
-          <Col className="text-center">
-            <h2 className="mt-5">A successful copywriter leading the way</h2>
+        <Row className="bottom-header-background">
+          <Col className="text-center zoom p-5 ms-5 me-3">
+            <h2 className="mt-5" style={{ fontWeight: 700 }}>
+              A successful copywriter leading the way
+            </h2>
             <p className="mb-5">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
               officiis in optio explicabo quas nemo, libero repellat ducimus!
@@ -33,6 +40,7 @@ const Home = () => {
             </p>
           </Col>
         </Row>
+        <Row className="header-background" style={{ height: 150 }}></Row>
         <Row className="">
           <HomeCar />
         </Row>

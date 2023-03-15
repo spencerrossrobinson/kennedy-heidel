@@ -1,8 +1,19 @@
 .header-background {
-  background: linear-gradient(to top, #9eda95, 40%, white);
+  background: linear-gradient(to top, #9eda95, 30%, white);
+}
+.bottom-header-background {
+  background: linear-gradient(to bottom, #9eda95, 90%, white);
 }
 .reverse-header-background {
   background: #9eda95;
+}
+.zoom {
+  transition: 0.5s;
+}
+.zoom:hover {
+  transform: scale(
+    1.1
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 .main-text {
   position: absolute;
