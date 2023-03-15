@@ -1,8 +1,8 @@
 .header-background {
-  background: linear-gradient(to top, #75ca68, 30%, white);
+  background: linear-gradient(to top, #9eda95, 40%, white);
 }
 .reverse-header-background {
-  background: linear-gradient(to bottom, #75ca68, 30%, white);
+  background: #9eda95;
 }
 .main-text {
   position: absolute;
@@ -11,7 +11,7 @@
   color: black;
 }
 .sub-text {
-  font-size: 120px;
+  font-size: 80px;
 }
 @media (max-width: 575px) {
   .carousel-item {

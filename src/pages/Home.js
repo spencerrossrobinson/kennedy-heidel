@@ -10,20 +10,19 @@ const Home = () => {
         <Row style={{ height: 300 }} className="header-background">
           <Col className="mt-5 ms-5" style={{ color: "black" }}>
             <Fade cascade>
-              <h1 style={{ fontSize: 65, fontWeight: 700, fontStyle: "bold" }}>
-                Kennedy Heidel
+              <h1 style={{ fontSize: 75, fontWeight: 700, fontStyle: "bold" }}>
+                Kennedy Heidel, Copywriter in Richmond, Virginia
               </h1>
-              <h2 className="ms-2">Copywriter in Richmond, Virginia</h2>
-              <h4 className="ms-2" style={{ fontStyle: "italic" }}>
-                An eye for design{" "}
+              <h4 className=" mt-3" style={{ fontStyle: "italic" }}>
+                An eye for design
               </h4>
             </Fade>
           </Col>
         </Row>
-        <Row>
-          <Col className="text-center reverse-header-background">
+        <Row className="reverse-header-background">
+          <Col className="text-center">
             <h2 className="mt-5">A successful copywriter leading the way</h2>
-            <p>
+            <p className="mb-5">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
               officiis in optio explicabo quas nemo, libero repellat ducimus!
               Error in autem vero sunt commodi. Ipsa illo possimus atque
