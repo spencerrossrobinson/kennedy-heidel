@@ -4,17 +4,18 @@ import HomeHeader from "../components/HomeHeader";
 import "../css/home.css";
 import { Fade } from "react-awesome-reveal";
 import plant from "../imgs/home/right-plant.jpg";
+import HomeCards from "../components/HomeCards";
 
 const Home = () => {
   return (
     <div>
-      <Container fluid className="" style={{ background: "#D5EED2" }}>
+      <Container fluid className="" style={{ background: "#E3F4E1" }}>
         <Row
-          className=" mt-5 pb-5 z-background"
+          className=" mt-5 pb-5 z-background card-shadow"
           style={{ borderBottomRightRadius: 500 }}
         >
           <Col
-            className=" header-background p-5 pb-2"
+            className=" header-background p-5 pb-2 "
             style={{ color: "white", borderBottomRightRadius: 500 }}
           >
             <Fade cascade>
@@ -34,8 +35,15 @@ const Home = () => {
             </Fade>
           </Col>
         </Row>
-        <Row className=" p-5 m-5">
-          <HomeCar />
+        <Row
+          className="mt-5 mb-5 px-5 py-3 pe-0 card-shadow"
+          style={{
+            background: "#cc3a3d",
+            borderTopLeftRadius: 500,
+            borderBottomLeftRadius: 500,
+          }}
+        >
+          <HomeCards />
         </Row>
         <Row className="p-3">
           <Col
@@ -66,6 +74,9 @@ const Home = () => {
         </Row>
         <Row className="">
           <HomeHeader />
+        </Row>
+        <Row className=" p-5 m-5">
+          <HomeCar />
         </Row>
       </Container>
     </div>
