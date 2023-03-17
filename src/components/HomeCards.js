@@ -1,3 +1,4 @@
+import { Fade, Zoom } from "react-awesome-reveal";
 import {
   Card,
   CardBody,
@@ -58,6 +59,14 @@ const HomeCards = () => {
           borderBottomLeftRadius: 500,
         }}
       >
+        <Fade>
+          <h1
+            className="text-center"
+            style={{ fontSize: 95, color: "white", fontWeight: 700 }}
+          >
+            Expertise
+          </h1>
+        </Fade>
         {cardData.map((card) => (
           <Col className="zoom m-3">
             <Card
@@ -68,7 +77,7 @@ const HomeCards = () => {
               }}
               className="m-auto card-shadow"
             >
-              <CardImg alt="Card image cap" src={card.imageUrl} />
+              <CardImg alt="Card image cap" src={card.imageUrl} className="" />
               <CardImgOverlay>
                 <CardTitle tag="h5">Card Title</CardTitle>
                 <CardText>
