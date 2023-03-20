@@ -5,6 +5,7 @@ import "../css/home.css";
 import { Fade } from "react-awesome-reveal";
 import plant from "../imgs/home/right-plant.jpg";
 import HomeCards from "../components/HomeCards";
+import headshot from "../imgs/headshots/headshot-front.jpg";
 
 const Home = () => {
   return (
@@ -87,12 +88,43 @@ const Home = () => {
             />
           </Col>
         </Row>
-        <Row className="">
+        <Row className="mb-5 mt-5 p-3">
+          <Col className="text-center">
+            <img
+              src={headshot}
+              alt="Headshot of Kennedy Heidel"
+              style={{ width: "20rem" }}
+              className="ms-auto "
+            />
+          </Col>
+          <Col
+            className="text-center zoom p-5 m-auto"
+            style={{
+              color: "white",
+              fontWeight: 500,
+              background: "#de8e4e",
+              borderBottomRightRadius: 300,
+            }}
+          >
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem, rerum. Aspernatur fugiat laborum sunt a numquam
+              obcaecati, inventore aperiam deleniti quia at ullam eveniet beatae
+              assumenda voluptates, laboriosam
+              <br />
+              labore ad. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Non cupiditate blanditiis fugit a maxime? Libero voluptatem
+              blanditiis at consequatur labore nam voluptas corrupti explicabo!
+              Soluta, quidem omnis? Error, consectetur iste!
+            </p>
+          </Col>
+        </Row>
+        {/* <Row className="">
           <HomeHeader />
         </Row>
         <Row className=" p-5 m-5">
           <HomeCar />
-        </Row>
+        </Row> */}
       </Container>
     </div>
   );
