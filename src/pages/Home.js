@@ -16,7 +16,7 @@ const Home = () => {
         >
           <Col
             className=" header-background p-5 pb-2 mb-5 mt-5"
-            style={{ color: "white", borderBottomRightRadius: 400 }}
+            style={{ color: "white", borderBottomRightRadius: 500 }}
           >
             <Fade cascade>
               <h1
@@ -28,12 +28,12 @@ const Home = () => {
               >
                 Kennedy Heidel
               </h1>
-              <h1 style={{ fontWeight: 700, fontSize: 120 }}>Copywriter</h1>
-              <h1 style={{ fontWeight: 700, fontSize: 120 }}>
+              <h1 style={{ fontWeight: 700, fontSize: 110 }}>Copywriter</h1>
+              <h1 style={{ fontWeight: 700, fontSize: 110 }}>
                 Richmond, Virginia
               </h1>
-              <h1 className=" mt-3" style={{ fontWeight: 700, fontSize: 120 }}>
-                Juggling Words
+              <h1 className=" mt-3" style={{ fontWeight: 700, fontSize: 110 }}>
+                Juggling Words,
               </h1>
               <h1
                 className="mb-5 mt-4"
@@ -43,12 +43,13 @@ const Home = () => {
               </h1>
             </Fade>
           </Col>
-          <Col
+          {/* <Col
             className="card-shadow"
             lg={2}
             style={{ background: "#cc3a3d", borderBottomLeftRadius: 300 }}
-          ></Col>
+          ></Col> */}
         </Row>
+        <Row style={{ height: 150 }}></Row>
         <Row
           className="mt-5 mb-5 px-5 py-3 pe-0 "
           style={{
