@@ -61,7 +61,7 @@ const Home = () => {
         >
           <HomeCards />
         </Row>
-        <Row className="p-3">
+        <Row className="p-3 mt-5">
           <Col
             className="text-center zoom p-5 m-auto header-background"
             style={{ borderBottomLeftRadius: 200, color: "white" }}
@@ -83,18 +83,18 @@ const Home = () => {
             <img
               src={plant}
               alt="plant"
-              className="w-100 mt-5 pr-5 mb-5"
+              className="w-75 m-auto"
               style={{ borderRadius: 50 }}
             />
           </Col>
         </Row>
         <Row className="mb-5 mt-5 p-3">
-          <Col className="text-center">
+          <Col className="text-center mb-5" xs={12} sm={4}>
             <img
               src={headshot}
               alt="Headshot of Kennedy Heidel"
-              style={{ width: "20rem" }}
-              className="ms-auto "
+              className="w-75 m-auto"
+              style={{ borderRadius: 50 }}
             />
           </Col>
           <Col
@@ -105,6 +105,8 @@ const Home = () => {
               background: "#de8e4e",
               borderBottomRightRadius: 300,
             }}
+            xs={10}
+            sm={8}
           >
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
