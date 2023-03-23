@@ -29,16 +29,16 @@ const Home = () => {
               >
                 Kennedy Heidel
               </h1>
-              <h1 style={{ fontWeight: 700, fontSize: 110 }}>Copywriter</h1>
-              <h1 style={{ fontWeight: 700, fontSize: 110 }}>
+              <h1 style={{ fontWeight: 700, fontSize: 100 }}>Copywriter</h1>
+              <h1 style={{ fontWeight: 700, fontSize: 100 }}>
                 Richmond, Virginia
               </h1>
-              <h1 className=" mt-3" style={{ fontWeight: 700, fontSize: 110 }}>
+              <h1 className=" mt-3" style={{ fontWeight: 700, fontSize: 100 }}>
                 Juggling Words,
               </h1>
               <h1
                 className="mb-5 mt-4"
-                style={{ fontWeight: 700, fontSize: 95 }}
+                style={{ fontWeight: 700, fontSize: 85 }}
               >
                 With The Martin Agency
               </h1>
@@ -61,7 +61,7 @@ const Home = () => {
         >
           <HomeCards />
         </Row>
-        <Row className="p-3 mt-5">
+        <Row className="p-3" style={{ marginTop: 150 }}>
           <Col
             className="text-center zoom p-5 m-auto header-background"
             style={{ borderBottomLeftRadius: 200, color: "white" }}
