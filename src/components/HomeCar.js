@@ -6,6 +6,7 @@ import {
   CarouselIndicators,
   CarouselCaption,
   Container,
+  Row,
 } from "reactstrap";
 import { Bounce } from "react-awesome-reveal";
 import slideOne from "../imgs/home/handNcoffe.jpg";
@@ -16,19 +17,23 @@ const items = [
   {
     src: slideOne,
     altText: "Slide 1",
-    caption: "COPYWRITE",
+    caption: "Spencer Robinson",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, facilis officiis? Mollitia omnis, impedit at distinctio numquam doloribus, doloremque quis inventore aspernatur ad incidunt sit labore ullam deserunt quia accusamus!",
     key: 1,
   },
   {
     src: slideTwo,
     altText: "Slide 2",
-    caption: "DIGITAL",
+    caption: "Spencer Robinson",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, facilis officiis? Mollitia omnis, impedit at distinctio numquam doloribus, doloremque quis inventore aspernatur ad incidunt sit labore ullam deserunt quia accusamus!",
     key: 2,
   },
   {
     src: slideThree,
     altText: "Slide 3",
-    caption: "SOCIAL",
+    caption: "Spencer Robinson",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, facilis officiis? Mollitia omnis, impedit at distinctio numquam doloribus, doloremque quis inventore aspernatur ad incidunt sit labore ullam deserunt quia accusamus!",
     key: 3,
@@ -61,50 +66,60 @@ const HomeCar = (args) => {
       <CarouselItem
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
-        key={item.src}
+        key={item.id}
+        className="text-center mt-5"
 
         // className="carousel-item"
       >
-        <img
+        {/* <img
           style={{ opacity: 0.5, borderRadius: 50, maxHeight: 400 }}
           src={item.src}
           alt={item.altText}
           className="w-100"
-          //   className="img-fluid"
-        />
-        <Bounce className="main-text">
-          <h1 className="sub-text">{item.caption}</h1>
+        /> */}
+        <Bounce>
+          <h1 style={{ fontWeight: 700, fontStyle: "bold" }}>
+            {item.description}
+          </h1>
+          <h2 style={{ fontWeight: 700, fontStyle: "bold" }}>{item.caption}</h2>
         </Bounce>
       </CarouselItem>
     );
   });
 
   return (
-    <Carousel
-      activeIndex={activeIndex}
-      next={next}
-      previous={previous}
-      {...args}
-      className="text-center"
-      style={{ maxHeight: 400 }}
-    >
-      <CarouselIndicators
-        items={items}
+    <Row className="mt-5 p-5 text-center m-auto" style={{ color: "#cc3a3d" }}>
+      <h1
+        className="text-center"
+        style={{ fontWeight: 700, fontStyle: "bold" }}
+      >
+        Testimonials
+      </h1>
+      <Carousel
         activeIndex={activeIndex}
-        onClickHandler={goToIndex}
-      />
-      {slides}
-      <CarouselControl
-        direction="prev"
-        directionText="Previous"
-        onClickHandler={previous}
-      />
-      <CarouselControl
-        direction="next"
-        directionText="Next"
-        onClickHandler={next}
-      />
-    </Carousel>
+        next={next}
+        previous={previous}
+        {...args}
+        style={{ maxHeight: 400 }}
+      >
+        <CarouselIndicators
+          items={items}
+          activeIndex={activeIndex}
+          onClickHandler={goToIndex}
+        />
+        {slides}
+        <CarouselControl
+          direction="prev"
+          directionText="Previous"
+          onClickHandler={previous}
+        />
+        <CarouselControl
+          direction="next"
+          directionText="Next"
+          onClickHandler={next}
+        />
+      </Carousel>
+    </Row>
   );
 };
 

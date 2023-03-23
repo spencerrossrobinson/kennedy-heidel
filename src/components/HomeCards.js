@@ -22,12 +22,12 @@ const HomeCards = () => {
     },
     {
       id: 2,
-      title: "COPYWRITE",
+      title: "PRINT",
       imageUrl: plant,
     },
     {
       id: 3,
-      title: "VIDEO",
+      title: "COLLATERAL",
       imageUrl: plant,
     },
     {

@@ -16,7 +16,7 @@ const Home = () => {
           style={{ borderBottomRightRadius: 500 }}
         >
           <Col
-            className=" header-background p-5 pb-2 mb-5 mt-5"
+            className=" header-background p-5 pb-2 mb-5 mt-3"
             style={{ color: "white", borderBottomRightRadius: 500 }}
           >
             <Fade cascade>
@@ -61,7 +61,7 @@ const Home = () => {
         >
           <HomeCards />
         </Row>
-        <Row className="p-3" style={{ marginTop: 150 }}>
+        <Row className="p-3" style={{ marginTop: 150, marginBottom: 150 }}>
           <Col
             className="text-center zoom p-5 m-auto header-background"
             style={{ borderBottomLeftRadius: 200, color: "white" }}
@@ -88,6 +88,7 @@ const Home = () => {
             />
           </Col>
         </Row>
+        <HomeCar />
         <Row className="mb-5 mt-5 p-3">
           <Col className="text-center mb-5" xs={12} sm={4}>
             <img
