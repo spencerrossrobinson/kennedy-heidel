@@ -2,11 +2,12 @@ import { Container, Row, Col } from "reactstrap";
 import headshot from "../imgs/headshots/headshot-front.jpg";
 
 const About = () => {
+  //about page for ken
   return (
     <div style={{ marginTop: 100 }}>
       <Container fluid>
-        {/* <Row style={{ background: "#306437", borderBottomRightRadius: 300 }}> */}
         <Row>
+          {/* header, again using large font, text needs to be edited */}
           <Col>
             <h1 style={{ fontSize: 75, fontWeight: 700 }}>
               Kenney Heidel, Master Copywriter, Lover of Cats, Juggler of Words
@@ -39,6 +40,7 @@ const About = () => {
               praesentium exercitationem neque nisi.
             </p>
           </Col>
+          {/* headshot of ken */}
           <Col className="m-0 p-0 text-center">
             <img
               src={headshot}
@@ -48,7 +50,6 @@ const About = () => {
             />
           </Col>
         </Row>
-        <Row style={{ height: 200 }}></Row>
       </Container>
     </div>
   );

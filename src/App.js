@@ -10,6 +10,7 @@ import About from "./pages/About";
 import RootLayout from "./layouts/RootLayout";
 import Gallery from "./pages/Gallery";
 
+//react router set up
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>

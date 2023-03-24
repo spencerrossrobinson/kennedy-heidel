@@ -11,6 +11,7 @@ const Home = () => {
   return (
     <div>
       <Container fluid className="" style={{ background: "white" }}>
+        {/* setting up the header for the home page, ken said she loved big letters that made a statement so running with this size for the moment until she can review */}
         <Row
           className=" mt-0 pb-5 z-background card-shadow"
           style={{ borderBottomRightRadius: 500 }}
@@ -19,6 +20,7 @@ const Home = () => {
             className=" header-background p-5 pb-2 mb-5 mt-3"
             style={{ color: "white", borderBottomRightRadius: 500 }}
           >
+            {/* adding in a text animation  */}
             <Fade cascade>
               <h1
                 style={{
@@ -44,13 +46,9 @@ const Home = () => {
               </h1>
             </Fade>
           </Col>
-          {/* <Col
-            className="card-shadow"
-            lg={2}
-            style={{ background: "#cc3a3d", borderBottomLeftRadius: 300 }}
-          ></Col> */}
         </Row>
         <Row style={{ height: 150 }}></Row>
+        {/* home cards that will link to nested routes, one card for each area of kens expertise, need to add react link */}
         <Row
           className="mt-5 mb-5 px-5 py-3 pe-0 "
           style={{
@@ -61,6 +59,7 @@ const Home = () => {
         >
           <HomeCards />
         </Row>
+        {/* simple row that will hold small synapsis on kens accomplishments */}
         <Row className="p-3" style={{ marginTop: 150, marginBottom: 150 }}>
           <Col
             className="text-center zoom p-5 m-auto header-background"
@@ -88,7 +87,9 @@ const Home = () => {
             />
           </Col>
         </Row>
+        {/* a carousel that will cycle through peer reviews and testimonials */}
         <HomeCar />
+        {/* small bio section at the bottom, need to add in social media icons */}
         <Row className="mb-5 mt-5 p-3">
           <Col className="text-center mb-5" xs={12} sm={4}>
             <img
@@ -122,12 +123,6 @@ const Home = () => {
             </p>
           </Col>
         </Row>
-        {/* <Row className="">
-          <HomeHeader />
-        </Row>
-        <Row className=" p-5 m-5">
-          <HomeCar />
-        </Row> */}
       </Container>
     </div>
   );

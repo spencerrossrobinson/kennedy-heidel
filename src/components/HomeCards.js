@@ -14,6 +14,7 @@ import "../css/home.css";
 import plant from "../imgs/home/right-plant.jpg";
 
 const HomeCards = () => {
+  //eventually will move this card data to its own folder with more info, basic scaffold to get them displaying on the home page
   const cardData = [
     {
       id: 1,
@@ -67,6 +68,7 @@ const HomeCards = () => {
             Expertise
           </h1>
         </Fade>
+        {/* mapping through the cardData to display 5 cards that will eventually be links on the home page */}
         {cardData.map((card) => (
           <Col className="zoom m-3">
             <Card

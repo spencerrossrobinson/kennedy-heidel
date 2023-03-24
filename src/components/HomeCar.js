@@ -41,42 +41,37 @@ const items = [
 ];
 
 const HomeCar = (args) => {
+  //setting up the logic for the reactstrap carousel
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
-
+  //next arrow click
   const next = () => {
     if (animating) return;
     const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
     setActiveIndex(nextIndex);
   };
-
+  //previous arrow click
   const previous = () => {
     if (animating) return;
     const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
     setActiveIndex(nextIndex);
   };
-
+  //go to index at the bottom of the carousel
   const goToIndex = (newIndex) => {
     if (animating) return;
     setActiveIndex(newIndex);
   };
 
   const slides = items.map((item) => {
+    //mapping through items to display one of each testimonial on a carousel slide
     return (
       <CarouselItem
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
         key={item.id}
         className="text-center mt-5"
-
-        // className="carousel-item"
       >
-        {/* <img
-          style={{ opacity: 0.5, borderRadius: 50, maxHeight: 400 }}
-          src={item.src}
-          alt={item.altText}
-          className="w-100"
-        /> */}
+        {/* adding a bounce animation to the text */}
         <Bounce>
           <h1 style={{ fontWeight: 700, fontStyle: "bold" }}>
             {item.description}
@@ -95,6 +90,7 @@ const HomeCar = (args) => {
       >
         Testimonials
       </h1>
+      {/* carousel set up with indicators, control, and displaying the slides declared above that maps through items object and shows testimonials */}
       <Carousel
         activeIndex={activeIndex}
         next={next}

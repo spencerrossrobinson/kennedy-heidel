@@ -10,6 +10,7 @@ import {
 } from "reactstrap";
 import { Outlet, NavLink } from "react-router-dom";
 
+//root layout page that displays the navbar, all other routes are nested in this one
 const RootLayout = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -18,6 +19,7 @@ const RootLayout = () => {
   return (
     <div>
       <header>
+        {/* navbar set up with react navigation, simple and sleek */}
         <Navbar
           className="custom-nav"
           expand="md"
