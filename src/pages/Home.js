@@ -2,6 +2,7 @@ import { Col, Container, Row } from "reactstrap";
 import HomeCar from "../components/HomeCar";
 import HomeHeader from "../components/HomeHeader";
 import "../css/home.css";
+import { Slide } from "react-awesome-reveal";
 import { Fade } from "react-awesome-reveal";
 import plant from "../imgs/home/right-plant.jpg";
 import HomeCards from "../components/HomeCards";
@@ -21,30 +22,30 @@ const Home = () => {
             style={{ color: "white", borderBottomRightRadius: 500 }}
           >
             {/* adding in a text animation  */}
-            <Fade cascade>
+            <Slide cascade>
               <h1
                 style={{
-                  fontSize: 120,
+                  fontSize: 130,
                   fontWeight: 700,
                   fontStyle: "bold",
                 }}
               >
                 Kennedy Heidel
               </h1>
-              <h1 style={{ fontWeight: 700, fontSize: 100 }}>Copywriter</h1>
-              <h1 style={{ fontWeight: 700, fontSize: 100 }}>
+              <h1 style={{ fontWeight: 700, fontSize: 80 }}>Copywriter</h1>
+              <h1 style={{ fontWeight: 700, fontSize: 80 }}>
                 Richmond, Virginia
               </h1>
-              <h1 className=" mt-3" style={{ fontWeight: 700, fontSize: 100 }}>
+              <h1 className=" mt-3" style={{ fontWeight: 700, fontSize: 80 }}>
                 Juggling Words,
               </h1>
               <h1
                 className="mb-5 mt-4"
-                style={{ fontWeight: 700, fontSize: 85 }}
+                style={{ fontWeight: 700, fontSize: 80 }}
               >
                 With The Martin Agency
               </h1>
-            </Fade>
+            </Slide>
           </Col>
         </Row>
         <Row style={{ height: 150 }}></Row>
