@@ -48,22 +48,9 @@ const Home = () => {
             </Slide>
           </Col>
         </Row>
-        <Row style={{ height: 150 }}></Row>
-        {/* home cards that will link to nested routes, one card for each area of kens expertise, need to add react link */}
-        <Row
-          className="mt-5 mb-5 px-5 py-3 pe-0 "
-          style={{
-            background: "#cc3a3d",
-            borderTopLeftRadius: 500,
-            borderBottomLeftRadius: 500,
-          }}
-        >
-          <HomeCards />
-        </Row>
-        {/* simple row that will hold small synapsis on kens accomplishments */}
         <Row className="p-3" style={{ marginTop: 150, marginBottom: 150 }}>
           <Col
-            className="text-center zoom p-5 m-auto header-background"
+            className="text-center zoom p-5 m-auto bottom-header-background"
             style={{ borderBottomLeftRadius: 200, color: "white" }}
             xs={10}
             sm={8}
@@ -91,6 +78,17 @@ const Home = () => {
             />
           </Col>
         </Row>
+        {/* home cards that will link to nested routes, one card for each area of kens expertise, need to add react link */}
+        <Row
+          className="mt-5 mb-5 px-5 py-3 pe-0 header-background"
+          style={{
+            borderTopLeftRadius: 500,
+            borderBottomLeftRadius: 500,
+          }}
+        >
+          <HomeCards />
+        </Row>
+        {/* simple row that will hold small synapsis on kens accomplishments */}
         {/* a carousel that will cycle through peer reviews and testimonials */}
         <HomeCar />
         {/* small bio section at the bottom, need to add in social media icons */}
