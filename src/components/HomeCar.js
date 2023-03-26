@@ -83,7 +83,7 @@ const HomeCar = (args) => {
   });
 
   return (
-    <Row className="mt-5 p-5 text-center m-auto" style={{ color: "#cc3a3d" }}>
+    <Row className="mt-5 p-5 text-center m-auto" style={{ color: "#4F7B58" }}>
       <h1
         className="text-center"
         style={{ fontWeight: 700, fontStyle: "bold" }}
