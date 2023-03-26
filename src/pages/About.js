@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div style={{ marginTop: 100 }}>
       <Container fluid>
-        <Row>
+        <Row className="m-3">
           {/* header, again using large font, text needs to be edited */}
           <Col>
             <h1 style={{ fontSize: 75, fontWeight: 700 }}>
@@ -17,7 +17,10 @@ const About = () => {
         </Row>
         <Row
           className="mb-5 mt-5 p-5"
-          style={{ background: "#306437", borderBottomLeftRadius: 200 }}
+          style={{
+            background: "#306437",
+            borderBottomLeftRadius: 200,
+          }}
         >
           <Col className="mb-5 m-5" style={{ color: "white", fontWeight: 500 }}>
             <p>
@@ -50,6 +53,7 @@ const About = () => {
             />
           </Col>
         </Row>
+        <Row style={{ height: 150 }}></Row>
       </Container>
     </div>
   );

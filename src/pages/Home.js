@@ -64,9 +64,12 @@ const Home = () => {
           <Col
             className="text-center zoom p-5 m-auto header-background"
             style={{ borderBottomLeftRadius: 200, color: "white" }}
+            xs={10}
+            sm={8}
           >
             <h2 className="mt-5" style={{ fontWeight: 700 }}>
               A successful copywriter leading the way
+              <i className="bi bi-instagram"></i>
             </h2>
             <p className="mb-5">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
@@ -78,11 +81,11 @@ const Home = () => {
               Autem placeat doloremque voluptatibus maiores fugiat!
             </p>
           </Col>
-          <Col className="text-center m-auto">
+          <Col className="text-center m-auto" xs={12} sm={4}>
             <img
               src={plant}
               alt="plant"
-              className="w-75 m-auto"
+              className="img-fluid"
               style={{ borderRadius: 50 }}
             />
           </Col>
@@ -95,7 +98,7 @@ const Home = () => {
             <img
               src={headshot}
               alt="Headshot of Kennedy Heidel"
-              className="w-75 m-auto"
+              className="img-fluid"
               style={{ borderRadius: 50 }}
             />
           </Col>

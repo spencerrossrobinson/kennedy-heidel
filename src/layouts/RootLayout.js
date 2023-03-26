@@ -8,7 +8,11 @@ import {
   NavItem,
   NavbarText,
 } from "reactstrap";
-import { Outlet, NavLink } from "react-router-dom";
+import { Outlet, NavLink, Link } from "react-router-dom";
+import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 //root layout page that displays the navbar, all other routes are nested in this one
 const RootLayout = () => {
@@ -27,19 +31,45 @@ const RootLayout = () => {
           style={{ background: "white" }}
         >
           <NavbarBrand href="/">Kennedy Heidel</NavbarBrand>
-          <NavbarText style={{ color: "#4EB03E" }}>Copywriter.</NavbarText>
+          <NavbarText style={{ color: "#306437" }}>Copywriter.</NavbarText>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ms-auto" navbar>
               <NavItem>
-                <NavLink to="/about" className="nav-link">
+                <NavLink
+                  to="/about"
+                  className="nav-link"
+                  style={{ color: "#306437" }}
+                >
                   ABOUT
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/gallery" className="nav-link">
+                <NavLink
+                  to="/gallery"
+                  className="nav-link"
+                  style={{ color: "#306437" }}
+                >
                   GALLERY
                 </NavLink>
+              </NavItem>
+              <NavItem>
+                <Link to="https://www.instagram.com/">
+                  <FontAwesomeIcon
+                    icon={faInstagram}
+                    className="mx-2"
+                    size="2x"
+                    style={{ color: "#306437" }}
+                  />
+                </Link>
+                <Link to="https://www.linkedin.com">
+                  <FontAwesomeIcon
+                    icon={faLinkedin}
+                    className="mx-2"
+                    size="2x"
+                    style={{ color: "#306437" }}
+                  />
+                </Link>
               </NavItem>
             </Nav>
           </Collapse>
