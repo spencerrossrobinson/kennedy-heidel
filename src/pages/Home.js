@@ -121,7 +121,11 @@ const Home = () => {
               blanditiis at consequatur labore nam voluptas corrupti explicabo!
               Soluta, quidem omnis? Error, consectetur iste!
             </p>
-            <Link to="https://www.kennedyheidel.com/_files/ugd/1b3afa_4220e04dd2f446e58c6a9d4d400ccc50.pdf">
+            <Link
+              to="https://www.kennedyheidel.com/_files/ugd/1b3afa_4220e04dd2f446e58c6a9d4d400ccc50.pdf"
+              target="_blank"
+              style={{ color: "inherit", textDecoration: "none" }}
+            >
               <p>RESUME</p>
             </Link>
           </Col>
