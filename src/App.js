@@ -9,6 +9,11 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import RootLayout from "./layouts/RootLayout";
 import Gallery from "./pages/Gallery";
+import Collateral from "./pages/Collateral";
+import Digital from "./pages/Digital";
+import Print from "./pages/Print";
+import Social from "./pages/Social";
+import Web from "./pages/Web";
 
 //react router set up
 const router = createBrowserRouter(
@@ -17,6 +22,11 @@ const router = createBrowserRouter(
       <Route index element={<Home />} />
       <Route path="about" element={<About />} />
       <Route path="gallery" element={<Gallery />} />
+      <Route path="collateral" element={<Collateral />} />
+      <Route path="digital" element={<Digital />} />
+      <Route path="print" element={<Print />} />
+      <Route path="social" element={<Social />} />
+      <Route path="web" element={<Web />} />
     </Route>
   )
 );
