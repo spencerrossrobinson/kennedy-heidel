@@ -31,7 +31,7 @@ const RootLayout = () => {
           style={{ background: "white" }}
         >
           <NavbarBrand href="/">Kennedy Heidel</NavbarBrand>
-          <NavbarText style={{ color: "#306437" }}>Copywriter.</NavbarText>
+          <NavbarText style={{ color: "#4f7b58" }}>Copywriter.</NavbarText>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ms-auto" navbar>
@@ -39,7 +39,7 @@ const RootLayout = () => {
                 <NavLink
                   to="/about"
                   className="nav-link"
-                  style={{ color: "#306437" }}
+                  style={{ color: "#4f7b58" }}
                 >
                   ABOUT
                 </NavLink>
@@ -48,7 +48,7 @@ const RootLayout = () => {
                 <NavLink
                   to="/gallery"
                   className="nav-link"
-                  style={{ color: "#306437" }}
+                  style={{ color: "#4f7b58" }}
                 >
                   GALLERY
                 </NavLink>
@@ -59,7 +59,7 @@ const RootLayout = () => {
                     icon={faInstagram}
                     className="mx-2"
                     size="2x"
-                    style={{ color: "#306437" }}
+                    style={{ color: "#4f7b58" }}
                   />
                 </Link>
               </NavItem>
@@ -69,7 +69,7 @@ const RootLayout = () => {
                     icon={faLinkedin}
                     className="mx-2"
                     size="2x"
-                    style={{ color: "#306437" }}
+                    style={{ color: "#4f7b58" }}
                   />
                 </Link>
               </NavItem>

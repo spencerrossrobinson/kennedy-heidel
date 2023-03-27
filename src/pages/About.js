@@ -21,9 +21,8 @@ const About = () => {
         </Row>
 
         <Row
-          className="mb-5 mt-5 p-5"
+          className="mb-5 mt-5 p-5 bottom-header-background"
           style={{
-            background: "#306437",
             borderBottomLeftRadius: 200,
           }}
         >

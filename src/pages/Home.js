@@ -20,7 +20,7 @@ const Home = () => {
           style={{ borderBottomRightRadius: 500 }}
         >
           <Col
-            className=" header-background p-5 pb-2 mb-5 mt-3"
+            className=" bottom-header-background p-5 pb-2 mb-5 mt-3"
             style={{ color: "white", borderBottomRightRadius: 500 }}
           >
             {/* adding in a text animation  */}
@@ -78,7 +78,7 @@ const Home = () => {
         </Row>
         {/* home cards that will link to nested routes, one card for each area of kens expertise, need to add react link */}
         <Row
-          className="mt-5 mb-5 px-5 py-3 pe-0 header-background"
+          className="mt-5 mb-5 px-5 py-3 pe-0 bottom-header-background"
           style={{
             borderTopLeftRadius: 300,
             borderBottomLeftRadius: 300,

@@ -66,7 +66,7 @@ const Collateral = () => {
             />
           </Col>
           <Col
-            className="text-center zoom p-5 m-auto header-background"
+            className="text-center zoom p-5 m-auto bottom-header-background"
             style={{
               borderBottomRightRadius: 150,
               borderTopLeftRadius: 50,
