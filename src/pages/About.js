@@ -60,7 +60,7 @@ const About = () => {
             />
           </Col>
         </Row>
-        <Row style={{ height: 150 }}></Row>
+        <Row style={{ height: 50 }}></Row>
       </Container>
     </div>
   );

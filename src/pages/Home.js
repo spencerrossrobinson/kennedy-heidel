@@ -7,6 +7,8 @@ import { Fade } from "react-awesome-reveal";
 import plant from "../imgs/home/right-plant.jpg";
 import HomeCards from "../components/HomeCards";
 import headshot from "../imgs/headshots/headshot-front.jpg";
+import mule from "../imgs/collateral/mule.png";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -57,21 +59,17 @@ const Home = () => {
           >
             <h2 className="mt-5" style={{ fontWeight: 700 }}>
               A successful copywriter leading the way
-              <i className="bi bi-instagram"></i>
             </h2>
             <p className="mb-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-              officiis in optio explicabo quas nemo, libero repellat ducimus!
-              Error in autem vero sunt commodi. Ipsa illo possimus atque
-              doloribus suscipit? Lorem, ipsum dolor sit amet consectetur
-              adipisicing elit. Ex iusto neque eum velit accusantium blanditiis
-              praesentium sit eius, porro libero ea, quaerat, ducimus dolore.
-              Autem placeat doloremque voluptatibus maiores fugiat!
+              Hello there human! Or robot! Welcome to the portfolio of Kennedy
+              Heidel — writer of puns and perfectly placed commas. I am an
+              award-winning Copywriter, Communications Specialist, and
+              Strategist with six years of agency and in-house experience.
             </p>
           </Col>
           <Col className="text-center m-auto" xs={12} sm={4}>
             <img
-              src={plant}
+              src={mule}
               alt="plant"
               className="img-fluid"
               style={{ borderRadius: 50 }}
@@ -82,8 +80,8 @@ const Home = () => {
         <Row
           className="mt-5 mb-5 px-5 py-3 pe-0 header-background"
           style={{
-            borderTopLeftRadius: 500,
-            borderBottomLeftRadius: 500,
+            borderTopLeftRadius: 300,
+            borderBottomLeftRadius: 300,
           }}
         >
           <HomeCards />
@@ -123,6 +121,9 @@ const Home = () => {
               blanditiis at consequatur labore nam voluptas corrupti explicabo!
               Soluta, quidem omnis? Error, consectetur iste!
             </p>
+            <Link to="https://www.kennedyheidel.com/_files/ugd/1b3afa_4220e04dd2f446e58c6a9d4d400ccc50.pdf">
+              <p>RESUME</p>
+            </Link>
           </Col>
         </Row>
       </Container>

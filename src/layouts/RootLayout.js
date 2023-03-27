@@ -62,7 +62,9 @@ const RootLayout = () => {
                     style={{ color: "#306437" }}
                   />
                 </Link>
-                <Link to="https://www.linkedin.com">
+              </NavItem>
+              <NavItem>
+                <Link to="https://www.linkedin.com/">
                   <FontAwesomeIcon
                     icon={faLinkedin}
                     className="mx-2"

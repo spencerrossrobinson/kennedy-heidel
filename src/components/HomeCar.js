@@ -102,6 +102,7 @@ const HomeCar = (args) => {
         next={next}
         previous={previous}
         {...args}
+        // className="carousel-dark"
       >
         <CarouselIndicators
           items={items}
@@ -118,6 +119,7 @@ const HomeCar = (args) => {
           direction="next"
           directionText="Next"
           onClickHandler={next}
+          style={{ backgroundColor: "blue" }}
         />
       </Carousel>
     </Row>
