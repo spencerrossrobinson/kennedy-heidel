@@ -17,25 +17,28 @@ const items = [
   {
     src: slideOne,
     altText: "Slide 1",
-    caption: "Spencer Robinson",
+    person: "Dave Saunders",
+    job: "Chief Idea Officer at Madison+Main",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, facilis officiis? Mollitia omnis, impedit at distinctio numquam doloribus, doloremque quis inventore aspernatur ad incidunt sit labore ullam deserunt quia accusamus!",
+      "Kennedy is an excellent intern and a fine example of the creative minds you are turning out in beautiful downtown Harrisonburg, Virginia. Although we mainly hire VCU Rams, I have changed my mind completely about JMU and will be sending my children there. I have only you to thank! Godspeed, and do not go gentle into that good night. ",
     key: 1,
   },
   {
     src: slideTwo,
     altText: "Slide 2",
-    caption: "Spencer Robinson",
+    person: "Dr. Mitchell",
+    job: "Professor and Research Mentor",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, facilis officiis? Mollitia omnis, impedit at distinctio numquam doloribus, doloremque quis inventore aspernatur ad incidunt sit labore ullam deserunt quia accusamus!",
+      "Kennedy not only excels academically but also show excitement for the material we study and great attention to detail. Her continued pursuit of knowledge makes her an active participant and great leader in class. Kennedy’s outgoing personality and enjoyment of the course make her a pleasure to teach and work with, and her projects and writing speak to the level of care and commitment she strives for. ",
     key: 2,
   },
   {
     src: slideThree,
     altText: "Slide 3",
-    caption: "Spencer Robinson",
+    person: "Kent Jennings Brockwell",
+    job: "Communications Manager at Madison+Main",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, facilis officiis? Mollitia omnis, impedit at distinctio numquam doloribus, doloremque quis inventore aspernatur ad incidunt sit labore ullam deserunt quia accusamus!",
+      "A skilled writer and captivating storyteller, her immense level of raw talent will serve her well over the development of her career, and I can't wait to see how high she'll fly. Her bubbly enthusiasm for both life and work is sickeningly genuine and pure. She single-handedly set the bar so high for our internship program, I'm actually annoyed. Ugh. Way to go, Kennedy. You ruined it for everyone else.",
     key: 3,
   },
 ];
@@ -69,14 +72,17 @@ const HomeCar = (args) => {
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
         key={item.id}
-        className="text-center mt-5"
+        className="text-center mt-5 carousel-item"
       >
         {/* adding a bounce animation to the text */}
         <Bounce>
           <h1 style={{ fontWeight: 700, fontStyle: "bold" }}>
             {item.description}
           </h1>
-          <h2 style={{ fontWeight: 700, fontStyle: "bold" }}>{item.caption}</h2>
+          <h2 className="p-2" style={{ fontWeight: 700, fontStyle: "bold" }}>
+            {item.person}
+          </h2>
+          <h2 style={{ fontWeight: 700, fontStyle: "italic" }}>{item.job}</h2>
         </Bounce>
       </CarouselItem>
     );
@@ -96,7 +102,6 @@ const HomeCar = (args) => {
         next={next}
         previous={previous}
         {...args}
-        style={{ maxHeight: 400 }}
       >
         <CarouselIndicators
           items={items}
