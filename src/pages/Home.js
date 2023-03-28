@@ -1,4 +1,4 @@
-import { Col, Container, Row } from "reactstrap";
+import { Button, Col, Container, Row } from "reactstrap";
 import HomeCar from "../components/HomeCar";
 import HomeHeader from "../components/HomeHeader";
 import "../css/home.css";
@@ -100,7 +100,7 @@ const Home = () => {
             />
           </Col>
           <Col
-            className="text-center zoom p-5 m-auto"
+            className="zoom p-5 m-auto"
             style={{
               color: "white",
               fontWeight: 500,
@@ -126,7 +126,7 @@ const Home = () => {
               target="_blank"
               style={{ color: "inherit", textDecoration: "none" }}
             >
-              <p>RESUME</p>
+              <Button className="bottom-header-background">RESUME</Button>
             </Link>
           </Col>
         </Row>

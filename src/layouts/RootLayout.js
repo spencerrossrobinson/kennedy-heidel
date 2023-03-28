@@ -13,6 +13,7 @@ import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ScrollToTop from "../helper/ScrollToTop";
 
 //root layout page that displays the navbar, all other routes are nested in this one
 const RootLayout = () => {
@@ -80,6 +81,7 @@ const RootLayout = () => {
       <main>
         <Outlet />
       </main>
+      <ScrollToTop />
     </div>
   );
 };

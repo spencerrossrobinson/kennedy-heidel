@@ -54,7 +54,7 @@ const About = () => {
             <img
               src={headshot}
               alt="Headshot of Kennedy Heidel"
-              style={{ width: "20rem" }}
+              style={{ width: "20rem", borderRadius: 50 }}
               className="ms-auto "
             />
           </Col>
