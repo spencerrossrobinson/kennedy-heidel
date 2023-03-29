@@ -1,12 +1,16 @@
 import { useState } from "react";
 import {
-  Collapse,
   Navbar,
-  NavbarToggler,
   NavbarBrand,
+  NavbarText,
+  NavbarToggler,
+  Collapse,
   Nav,
   NavItem,
-  NavbarText,
+  Dropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
 } from "reactstrap";
 import { Outlet, NavLink, Link } from "react-router-dom";
 import { faCoffee } from "@fortawesome/free-solid-svg-icons";
@@ -18,8 +22,10 @@ import ScrollToTop from "../helper/ScrollToTop";
 //root layout page that displays the navbar, all other routes are nested in this one
 const RootLayout = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
+  const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
 
   return (
     <div>
@@ -38,6 +44,63 @@ const RootLayout = () => {
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ms-auto" navbar>
+              <Dropdown
+                isOpen={dropdownOpen}
+                toggle={toggleDropdown}
+                nav
+                inNavbar
+              >
+                <DropdownToggle nav caret style={{ color: "#4FAAA7" }}>
+                  EXPERTISE
+                </DropdownToggle>
+                <DropdownMenu>
+                  <DropdownItem>
+                    <Link
+                      to="/social"
+                      className="nav-link"
+                      style={{ color: "#4FAAA7" }}
+                    >
+                      Social
+                    </Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link
+                      to="/digital"
+                      className="nav-link"
+                      style={{ color: "#4FAAA7" }}
+                    >
+                      Digital
+                    </Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link
+                      to="/print"
+                      className="nav-link"
+                      style={{ color: "#4FAAA7" }}
+                    >
+                      Print
+                    </Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link
+                      to="/collateral"
+                      className="nav-link"
+                      style={{ color: "#4FAAA7" }}
+                    >
+                      Collateral
+                    </Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link
+                      to="/web"
+                      className="nav-link"
+                      style={{ color: "#4FAAA7" }}
+                    >
+                      Web
+                    </Link>
+                  </DropdownItem>
+                </DropdownMenu>
+              </Dropdown>
               <NavItem>
                 <NavLink
                   to="/about"

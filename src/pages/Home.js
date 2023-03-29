@@ -85,7 +85,7 @@ const Home = () => {
         </Row>
         {/* home cards that will link to nested routes, one card for each area of kens expertise, need to add react link */}
         <Row
-          className="mt-5 mb-5 px-5 py-3 pe-0 blue-background"
+          className="blue-background"
           style={{
             borderTopLeftRadius: 300,
             borderBottomLeftRadius: 300,

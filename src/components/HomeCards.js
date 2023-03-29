@@ -13,7 +13,7 @@ import {
 import "../css/home.css";
 import plant from "../imgs/home/right-plant.jpg";
 import show from "../imgs/digital/catch-show.png";
-import pickle from "../imgs/print/pickleball.png";
+import pickle from "../imgs/print/pickle-resize-2.png";
 import social from "../imgs/social/coffee-phone.png";
 import web from "../imgs/web/green-pink-screen.png";
 import collateral from "../imgs/collateral/mule.png";
@@ -73,32 +73,28 @@ const HomeCards = () => {
         </Fade>
         {/* mapping through the cardData to display 5 cards that will eventually be links on the home page */}
         {cardData.map((card) => (
-          <Col className="zoom m-5">
+          <Col className="zoom m-auto text-center" xs={12} sm={12} md={5}>
             <Link
               to={card.link}
               style={{ color: "inherit", textDecoration: "none" }}
             >
+              <img
+                src={card.imageUrl}
+                alt="plant"
+                className=""
+                style={{ borderRadius: 50, background: "none", width: "30rem" }}
+              />
               <h1
-                className="text-center header-font"
-                style={{ fontSize: 65, color: "white", fontWeight: 700 }}
+                className="text-center header-font card-shadow green-background p-2"
+                style={{
+                  fontSize: 65,
+                  color: "white",
+                  fontWeight: 700,
+                  borderRadius: 50,
+                }}
               >
                 {card.title}
               </h1>
-              <Card
-                inverse
-                style={{
-                  width: "30rem",
-                  height: 300,
-                  border: "none",
-                }}
-                className="m-auto card-shadow header-background"
-              >
-                <CardImg
-                  alt="Card image cap"
-                  src={card.imageUrl}
-                  className=""
-                />
-              </Card>
             </Link>
           </Col>
         ))}
