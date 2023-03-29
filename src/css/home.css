@@ -1,16 +1,22 @@
-.header-background {
+.green-background {
   /* background: linear-gradient(to bottom, #2d6a25, 95%, white); */
-  background: #306437;
+  background: #b7cf99;
 }
-.bottom-header-background {
+.orange-background {
   /* background: linear-gradient(to top, #2d6a25, 40%, white); */
-  background: #4f7b58;
+  background: #f7892e;
 }
 .top-header-background {
   background: linear-gradient(white, #2d6a25, white);
 }
-.z-background {
-  background: #de8e4e;
+.blue-background {
+  background: #4faaa7;
+}
+.red-background {
+  background: #c6460f;
+}
+.yellow-background {
+  background: #eac761;
 }
 .zoom {
   transition: 0.5s;

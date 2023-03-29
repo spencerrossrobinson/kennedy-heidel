@@ -12,7 +12,10 @@ const About = () => {
           {/* header, again using large font, text needs to be edited */}
           <Col>
             <Slide cascade>
-              <h1 style={{ fontSize: 75, fontWeight: 700 }}>
+              <h1
+                style={{ fontSize: 75, fontWeight: 700, color: "#C6460F" }}
+                className="header-font"
+              >
                 Kenney Heidel, Master Copywriter, Lover of Cats, Juggler of
                 Words at Martin Agency
               </h1>
@@ -21,7 +24,7 @@ const About = () => {
         </Row>
 
         <Row
-          className="mb-5 mt-5 p-5 bottom-header-background"
+          className="mb-5 mt-5 p-5 blue-background"
           style={{
             borderBottomLeftRadius: 200,
           }}

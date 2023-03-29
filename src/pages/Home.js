@@ -16,51 +16,58 @@ const Home = () => {
       <Container fluid className="" style={{ background: "white" }}>
         {/* setting up the header for the home page, ken said she loved big letters that made a statement so running with this size for the moment until she can review */}
         <Row
-          className=" mt-0 pb-5 z-background card-shadow"
+          className=" mt-0 pb-5 blue-background card-shadow"
           style={{ borderBottomRightRadius: 500 }}
         >
           <Col
-            className=" bottom-header-background p-5 pb-2 mb-5 mt-3"
+            className=" orange-background p-5 pb-2 mb-5 mt-3"
             style={{ color: "white", borderBottomRightRadius: 500 }}
           >
             {/* adding in a text animation  */}
             <Slide cascade>
               <h1
                 style={{
-                  fontSize: 130,
+                  fontSize: 120,
                   fontWeight: 700,
                   fontStyle: "bold",
                 }}
+                className="header-font"
               >
                 Kennedy Heidel
               </h1>
-              <h1 style={{ fontWeight: 700, fontSize: 80 }}>Copywriter</h1>
-              <h1 style={{ fontWeight: 700, fontSize: 80 }}>
+              <h1 style={{ fontWeight: 500, fontSize: 50 }}>Copywriter.</h1>
+              <h1 style={{ fontWeight: 500, fontSize: 50 }}>
                 Richmond, Virginia
               </h1>
-              <h1 className=" mt-3" style={{ fontWeight: 700, fontSize: 80 }}>
-                Juggling Words,
-              </h1>
               <h1
+                className=" mt-4 mb-5"
+                style={{ fontWeight: 500, fontSize: 50 }}
+              >
+                Juggling Words with Madison & Main
+              </h1>
+              {/* <h1
                 className="mb-5 mt-4"
-                style={{ fontWeight: 700, fontSize: 80 }}
+                style={{ fontWeight: 500, fontSize: 50 }}
               >
                 With The Martin Agency
-              </h1>
+              </h1> */}
             </Slide>
           </Col>
         </Row>
-        <Row className="p-3" style={{ marginTop: 150, marginBottom: 150 }}>
+        <Row className="p-3" style={{ marginTop: 100, marginBottom: 100 }}>
           <Col
-            className="text-center zoom p-5 m-auto bottom-header-background"
+            className="text-center zoom p-5 m-auto green-background"
             style={{ borderBottomLeftRadius: 200, color: "white" }}
             xs={10}
             sm={8}
           >
-            <h2 className="mt-5" style={{ fontWeight: 700 }}>
-              A successful copywriter leading the way
+            <h2
+              className="mt-5 header-font"
+              style={{ fontWeight: 700, fontSize: 60 }}
+            >
+              A Successful Copywriter Leading The Way
             </h2>
-            <p className="mb-5">
+            <p className="mb-5" style={{ fontSize: 20 }}>
               Hello there human! Or robot! Welcome to the portfolio of Kennedy
               Heidel — writer of puns and perfectly placed commas. I am an
               award-winning Copywriter, Communications Specialist, and
@@ -78,7 +85,7 @@ const Home = () => {
         </Row>
         {/* home cards that will link to nested routes, one card for each area of kens expertise, need to add react link */}
         <Row
-          className="mt-5 mb-5 px-5 py-3 pe-0 bottom-header-background"
+          className="mt-5 mb-5 px-5 py-3 pe-0 blue-background"
           style={{
             borderTopLeftRadius: 300,
             borderBottomLeftRadius: 300,
@@ -100,11 +107,10 @@ const Home = () => {
             />
           </Col>
           <Col
-            className="zoom p-5 m-auto"
+            className="zoom p-5 m-auto green-background"
             style={{
               color: "white",
               fontWeight: 500,
-              background: "#de8e4e",
               borderBottomRightRadius: 300,
             }}
             xs={10}

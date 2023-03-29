@@ -57,16 +57,15 @@ const HomeCards = () => {
   return (
     <div className="mt-5 mb-5">
       <Row
-        className="card-shadow"
+        className="card-shadow orange-background"
         style={{
-          background: "#de8e4e",
           borderTopLeftRadius: 300,
           borderBottomLeftRadius: 300,
         }}
       >
         <Fade>
           <h1
-            className="text-center m-5"
+            className="text-center m-5 header-font"
             style={{ fontSize: 95, color: "white", fontWeight: 700 }}
           >
             Expertise
@@ -80,7 +79,7 @@ const HomeCards = () => {
               style={{ color: "inherit", textDecoration: "none" }}
             >
               <h1
-                className="text-center"
+                className="text-center header-font"
                 style={{ fontSize: 65, color: "white", fontWeight: 700 }}
               >
                 {card.title}
@@ -89,10 +88,10 @@ const HomeCards = () => {
                 inverse
                 style={{
                   width: "30rem",
-                  height: 500,
+                  height: 300,
                   border: "none",
                 }}
-                className="m-auto card-shadow"
+                className="m-auto card-shadow header-background"
               >
                 <CardImg
                   alt="Card image cap"

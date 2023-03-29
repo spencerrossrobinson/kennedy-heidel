@@ -12,7 +12,10 @@ const Collateral = () => {
         <Row>
           <Col className="text-center">
             <Slide cascade>
-              <h1 style={{ fontSize: 75, fontWeight: 700 }}>
+              <h1
+                style={{ fontSize: 75, fontWeight: 700 }}
+                className="header-font"
+              >
                 Clap for Collateral
               </h1>
             </Slide>
@@ -20,7 +23,7 @@ const Collateral = () => {
         </Row>
         <Row className="p-3 mb-0" style={{ marginTop: 100 }}>
           <Col
-            className="text-center zoom p-5 m-auto z-background"
+            className="text-center zoom p-5 m-auto blue-background"
             style={{
               borderBottomLeftRadius: 150,
               borderTopRightRadius: 50,
@@ -66,7 +69,7 @@ const Collateral = () => {
             />
           </Col>
           <Col
-            className="text-center zoom p-5 m-auto bottom-header-background"
+            className="text-center zoom p-5 m-auto orange-background"
             style={{
               borderBottomRightRadius: 150,
               borderTopLeftRadius: 50,
@@ -96,7 +99,7 @@ const Collateral = () => {
         </Row>
         <Row className="p-3 mb-0">
           <Col
-            className="text-center zoom p-5 m-auto z-background"
+            className="text-center zoom p-5 m-auto green-background"
             style={{
               borderBottomLeftRadius: 150,
               borderTopRightRadius: 50,
