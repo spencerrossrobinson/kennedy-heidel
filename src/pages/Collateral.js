@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const Collateral = () => {
   return (
     <div style={{ marginTop: 150 }}>
-      <Container>
+      <Container fluid>
         <Row>
           <Col className="text-center">
             <Slide cascade>
@@ -23,7 +23,7 @@ const Collateral = () => {
         </Row>
         <Row className="p-3 mb-0" style={{ marginTop: 100 }}>
           <Col
-            className="text-center zoom p-5 m-auto blue-background"
+            className="text-center zoom p-5 m-auto blue-background card-shadow"
             style={{
               borderBottomLeftRadius: 150,
               borderTopRightRadius: 50,
@@ -54,8 +54,8 @@ const Collateral = () => {
             <img
               src={mule}
               alt="plant"
-              className="img-fluid"
-              style={{ borderRadius: 50 }}
+              //   className="img-fluid"
+              style={{ borderRadius: 50, width: "30rem" }}
             />
           </Col>
         </Row>
@@ -64,12 +64,12 @@ const Collateral = () => {
             <img
               src={toast}
               alt="plant"
-              className="img-fluid"
-              style={{ borderRadius: 50 }}
+              //   className="img-fluid"
+              style={{ borderRadius: 50, width: "25rem" }}
             />
           </Col>
           <Col
-            className="text-center zoom p-5 m-auto orange-background"
+            className="text-center zoom p-5 m-auto orange-background card-shadow"
             style={{
               borderBottomRightRadius: 150,
               borderTopLeftRadius: 50,
@@ -99,7 +99,7 @@ const Collateral = () => {
         </Row>
         <Row className="p-3 mb-0">
           <Col
-            className="text-center zoom p-5 m-auto green-background"
+            className="text-center zoom p-5 m-auto green-background card-shadow"
             style={{
               borderBottomLeftRadius: 150,
               borderTopRightRadius: 50,

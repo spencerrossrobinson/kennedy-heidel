@@ -84,19 +84,12 @@ const Home = () => {
           </Col>
         </Row>
         {/* home cards that will link to nested routes, one card for each area of kens expertise, need to add react link */}
-        <Row
-          className="blue-background"
-          style={{
-            borderTopLeftRadius: 300,
-            borderBottomLeftRadius: 300,
-          }}
-        >
-          <HomeCards />
-        </Row>
+        <HomeCards />
         {/* simple row that will hold small synapsis on kens accomplishments */}
         {/* a carousel that will cycle through peer reviews and testimonials */}
         <HomeCar />
         {/* small bio section at the bottom, need to add in social media icons */}
+
         <Row className="mb-5 mt-5 p-3">
           <Col className="text-center mb-5" xs={12} sm={4}>
             <img
@@ -107,33 +100,44 @@ const Home = () => {
             />
           </Col>
           <Col
-            className="zoom p-5 m-auto green-background"
+            className="zoom p-5 m-auto"
             style={{
               color: "white",
               fontWeight: 500,
-              borderBottomRightRadius: 300,
             }}
             xs={10}
             sm={8}
           >
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Exercitationem, rerum. Aspernatur fugiat laborum sunt a numquam
-              obcaecati, inventore aperiam deleniti quia at ullam eveniet beatae
-              assumenda voluptates, laboriosam
-              <br />
-              labore ad. Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Non cupiditate blanditiis fugit a maxime? Libero voluptatem
-              blanditiis at consequatur labore nam voluptas corrupti explicabo!
-              Soluta, quidem omnis? Error, consectetur iste!
-            </p>
-            <Link
-              to="https://www.kennedyheidel.com/_files/ugd/1b3afa_4220e04dd2f446e58c6a9d4d400ccc50.pdf"
-              target="_blank"
-              style={{ color: "inherit", textDecoration: "none" }}
+            <h1
+              className="blue-background p-5 text-center"
+              style={{ borderTopRightRadius: 200 }}
             >
-              <Button className="bottom-header-background">RESUME</Button>
-            </Link>
+              Kennedy Heidel Copywriter
+            </h1>
+            <div
+              className="green-background p-5"
+              // style={{ borderBottomRightRadius: 200 }}
+            >
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem, rerum. Aspernatur fugiat laborum sunt a numquam
+                obcaecati, inventore aperiam deleniti quia at ullam eveniet
+                beatae assumenda voluptates, laboriosam
+                <br />
+                labore ad. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Non cupiditate blanditiis fugit a maxime? Libero
+                voluptatem blanditiis at consequatur labore nam voluptas
+                corrupti explicabo! Soluta, quidem omnis? Error, consectetur
+                iste!
+              </p>
+              <Link
+                to="https://www.kennedyheidel.com/_files/ugd/1b3afa_4220e04dd2f446e58c6a9d4d400ccc50.pdf"
+                target="_blank"
+                style={{ color: "inherit", textDecoration: "none" }}
+              >
+                <Button className="bottom-header-background">RESUME</Button>
+              </Link>
+            </div>
           </Col>
         </Row>
       </Container>
