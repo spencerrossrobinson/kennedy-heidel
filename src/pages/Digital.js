@@ -22,7 +22,7 @@ const Digital = () => {
         </Row>
         <Row className="p-3 mb-5" style={{ marginTop: 100 }}>
           <Col
-            className="text-center zoom p-5 m-auto blue-background card-shadow"
+            className="text-center zoom p-5 m-auto blue-background card-shadow d-none d-lg-block"
             style={{
               borderBottomLeftRadius: 150,
               borderTopRightRadius: 50,
@@ -30,7 +30,7 @@ const Digital = () => {
               color: "white",
             }}
             xs={12}
-            sm={5}
+            md={5}
           >
             <Link
               to="https://maolamilk.com/"
@@ -50,22 +50,51 @@ const Digital = () => {
             </p>
             <p>Print, Digital, Organic & OOH</p>
           </Col>
-          <Col className="text-center m-auto" xs={12} sm={5}>
-            <img
-              src={health}
-              alt="plant"
-              //   className="img-fluid"
-              style={{ borderRadius: 50, width: "30rem" }}
-            />
-          </Col>
-        </Row>
-        <Row className="p-3 mb-5">
-          <Col className="text-center m-auto" xs={12} sm={5}>
+          <Col className="text-center m-auto" xs={12} lg={6}>
             <img
               src={milk}
               alt="plant"
               //   className="img-fluid"
-              style={{ borderRadius: 50, width: "25rem" }}
+              style={{ borderRadius: 50, width: "40rem" }}
+            />
+          </Col>
+          <Col
+            className="text-center zoom p-5 m-auto blue-background card-shadow d-block d-lg-none"
+            style={{
+              borderBottomLeftRadius: 150,
+              borderTopRightRadius: 50,
+              borderBottomRightRadius: 50,
+              color: "white",
+            }}
+            xs={12}
+            lg={5}
+          >
+            <Link
+              to="https://maolamilk.com/"
+              style={{ color: "inherit", textDecoration: "none" }}
+              target="_blank"
+            >
+              <h2
+                className="mt-5"
+                style={{ fontWeight: 700, textDecoration: "underline" }}
+              >
+                Maola Milk
+              </h2>
+            </Link>
+            <p className="mb-4 mt-4">
+              With Maola, you know it's fresh from farm to fridge. It's so
+              fresh, it's almost like you have a new pet.
+            </p>
+            <p>Print, Digital, Organic & OOH</p>
+          </Col>
+        </Row>
+        <Row className="p-3 ">
+          <Col className="text-center m-auto" xs={12} lg={5}>
+            <img
+              src={health}
+              alt="plant"
+              //   className="img-fluid"
+              style={{ borderRadius: 50, width: "35rem" }}
             />
           </Col>
           <Col
@@ -77,7 +106,7 @@ const Digital = () => {
               color: "white",
             }}
             xs={12}
-            sm={7}
+            lg={5}
           >
             <Link
               to="https://www.vdh.virginia.gov/covidwise/"
