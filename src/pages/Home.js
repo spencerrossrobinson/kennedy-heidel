@@ -109,7 +109,7 @@ const Home = () => {
             sm={8}
           >
             <h1
-              className="blue-background p-5 text-center"
+              className="blue-background p-5 text-center header-font"
               style={{ borderTopRightRadius: 200 }}
             >
               Kennedy Heidel Copywriter

@@ -2,6 +2,7 @@ import { Slide } from "react-awesome-reveal";
 import { Container, Row, Col } from "reactstrap";
 import headshot from "../imgs/headshots/headshot-front.jpg";
 import { Bounce } from "react-awesome-reveal";
+import resume from "../imgs/headshots/ken-resume.png";
 
 const About = () => {
   //about page for ken
@@ -62,7 +63,23 @@ const About = () => {
             />
           </Col>
         </Row>
-        <Row style={{ height: 50 }}></Row>
+
+        <Row className="">
+          <Col className="text-center">
+            <h1
+              className="header-font text-center m-5 yellow-background"
+              style={{ fontSize: 75, color: "white", borderRadius: 50 }}
+            >
+              Resume
+            </h1>
+            <img
+              src={resume}
+              alt=""
+              className=" m-auto"
+              style={{ width: "50rem" }}
+            />
+          </Col>
+        </Row>
       </Container>
     </div>
   );
