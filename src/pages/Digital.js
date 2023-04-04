@@ -38,7 +38,7 @@ const Digital = () => {
               target="_blank"
             >
               <h2
-                className="mt-5"
+                className="mt-5 zoom"
                 style={{ fontWeight: 700, textDecoration: "underline" }}
               >
                 Maola Milk
@@ -75,7 +75,7 @@ const Digital = () => {
               target="_blank"
             >
               <h2
-                className="mt-5"
+                className="mt-5 zoom"
                 style={{ fontWeight: 700, textDecoration: "underline" }}
               >
                 Maola Milk
@@ -114,7 +114,7 @@ const Digital = () => {
               target="_blank"
             >
               <h2
-                className="mt-5"
+                className="mt-5 zoom"
                 style={{ fontWeight: 700, textDecoration: "underline" }}
               >
                 VIRGINIA DEPARTMENT OF HEALTH — COVIDWISE
