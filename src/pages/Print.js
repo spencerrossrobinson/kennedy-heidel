@@ -72,7 +72,7 @@ const Print = () => {
               color: "white",
             }}
             xs={12}
-            md={6}
+            md={7}
           >
             <Link
               to="https://asmithbowman.com/"
