@@ -44,6 +44,15 @@ const RootLayout = () => {
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ms-auto" navbar>
+              <NavItem>
+                <NavLink
+                  to="/about"
+                  className="nav-link"
+                  style={{ color: "#C6460F" }}
+                >
+                  ABOUT
+                </NavLink>
+              </NavItem>
               <Dropdown
                 isOpen={dropdownOpen}
                 toggle={toggleDropdown}
@@ -58,7 +67,7 @@ const RootLayout = () => {
                     <Link
                       to="/social"
                       className="nav-link"
-                      style={{ color: "#4FAAA7" }}
+                      style={{ color: "#c6460f" }}
                     >
                       Social
                     </Link>
@@ -67,7 +76,7 @@ const RootLayout = () => {
                     <Link
                       to="/digital"
                       className="nav-link"
-                      style={{ color: "#4FAAA7" }}
+                      style={{ color: "#eac761" }}
                     >
                       Digital
                     </Link>
@@ -76,7 +85,7 @@ const RootLayout = () => {
                     <Link
                       to="/print"
                       className="nav-link"
-                      style={{ color: "#4FAAA7" }}
+                      style={{ color: "#b7cf99" }}
                     >
                       Print
                     </Link>
@@ -85,7 +94,7 @@ const RootLayout = () => {
                     <Link
                       to="/collateral"
                       className="nav-link"
-                      style={{ color: "#4FAAA7" }}
+                      style={{ color: "#f7892e" }}
                     >
                       Collateral
                     </Link>
@@ -101,15 +110,6 @@ const RootLayout = () => {
                   </DropdownItem>
                 </DropdownMenu>
               </Dropdown>
-              <NavItem>
-                <NavLink
-                  to="/about"
-                  className="nav-link"
-                  style={{ color: "#C6460F" }}
-                >
-                  ABOUT
-                </NavLink>
-              </NavItem>
               <NavItem>
                 <NavLink
                   to="/gallery"
