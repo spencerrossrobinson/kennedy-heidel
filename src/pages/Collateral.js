@@ -1,8 +1,8 @@
 import { Col, Container, Row } from "reactstrap";
 import { Slide } from "react-awesome-reveal";
-import mule from "../imgs/collateral/mule.png";
-import toast from "../imgs/collateral/toast.png";
-import epic from "../imgs/collateral/epic.png";
+import mule from "../imgs/home/recipe-book.png";
+import toast from "../imgs/collateral/toast-2.png";
+import epic from "../imgs/collateral/epic-2.png";
 import { Link } from "react-router-dom";
 
 const Collateral = () => {
@@ -54,8 +54,8 @@ const Collateral = () => {
             <img
               src={mule}
               alt="plant"
-              //   className="img-fluid"
-              style={{ borderRadius: 50, width: "30rem" }}
+              className="super-zoom"
+              style={{ borderRadius: 50, width: "35rem" }}
             />
           </Col>
           <Col
@@ -88,12 +88,12 @@ const Collateral = () => {
           </Col>
         </Row>
         <Row className="p-3 mt-0">
-          <Col className="text-center m-auto" xs={12} lg={5}>
+          <Col className="text-center m-auto" xs={12} lg={6}>
             <img
               src={toast}
               alt="plant"
-              //   className="img-fluid"
-              style={{ borderRadius: 50, width: "25rem" }}
+              className="super-zoom"
+              style={{ borderRadius: 50, width: "30rem" }}
             />
           </Col>
           <Col
@@ -105,7 +105,7 @@ const Collateral = () => {
               color: "white",
             }}
             xs={12}
-            lg={7}
+            lg={6}
           >
             <Link
               to="https://wythken.com/"
@@ -158,7 +158,7 @@ const Collateral = () => {
             <img
               src={epic}
               alt="plant"
-              className="img-fluid"
+              className="img-fluid super-zoom"
               style={{ borderRadius: 50 }}
             />
           </Col>

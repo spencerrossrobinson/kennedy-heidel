@@ -53,7 +53,7 @@ const Web = () => {
             <img
               src={brown}
               alt="plant"
-              //   className="img-fluid"
+              className="zoom"
               style={{ borderRadius: 50, width: "50rem" }}
             />
           </Col>
@@ -91,7 +91,7 @@ const Web = () => {
             <img
               src={wythken}
               alt="plant"
-              //   className="img-fluid"
+              className="zoom"
               style={{ borderRadius: 50, width: "50rem" }}
             />
           </Col>

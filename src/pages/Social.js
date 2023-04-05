@@ -1,8 +1,6 @@
 import { Col, Container, Row } from "reactstrap";
 import { Slide } from "react-awesome-reveal";
 import coffee from "../imgs/social/coffee.png";
-import posts from "../imgs/social/posts.png";
-import postsTwo from "../imgs/social/posts-2.png";
 import allPosts from "../imgs/social/all-posts.png";
 import { Link } from "react-router-dom";
 
@@ -59,7 +57,7 @@ const Social = () => {
             <img
               src={coffee}
               alt="plant"
-              //   className="img-fluid"
+              className="super-zoom"
               style={{ borderRadius: 50, width: "40rem" }}
             />
           </Col>
@@ -101,7 +99,7 @@ const Social = () => {
             <img
               src={allPosts}
               alt="plant"
-              //   className="img-fluid"
+              className="super-zoom"
               style={{ borderRadius: 50, width: "40rem" }}
             />
           </Col>

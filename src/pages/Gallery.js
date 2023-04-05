@@ -1,23 +1,32 @@
 import { Col, Container, Row } from "reactstrap";
 import { GALLERY } from "../data/GALLERY";
+import { Slide } from "react-awesome-reveal";
 
 const Gallery = () => {
   return (
     //gallery page for a collage of all kens work
     <div style={{ marginTop: 100 }}>
       <Container fluid>
-        <Row>
-          <Col>
-            <h1>GALLERY OF WORK</h1>
+        <Row style={{ marginBottom: 100 }}>
+          <Col className="text-center">
+            <Slide cascade>
+              <h1
+                style={{ fontSize: 75, fontWeight: 700 }}
+                className="header-font"
+              >
+                Gallery of Work
+              </h1>
+            </Slide>
           </Col>
         </Row>
-        <Row>
+        <Row className="m-auto text-center">
           {GALLERY.map((pic) => (
-            <Col>
+            <Col xs={4} className="m-auto">
               <img
                 src={pic.img}
                 alt=""
-                style={{ height: 500, width: "auto" }}
+                style={{ width: "20rem", borderRadius: 25 }}
+                className="mega-zoom card-shadow"
               />
             </Col>
           ))}

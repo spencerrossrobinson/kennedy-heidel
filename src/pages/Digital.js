@@ -54,7 +54,7 @@ const Digital = () => {
             <img
               src={milk}
               alt="plant"
-              //   className="img-fluid"
+              className="super-zoom"
               style={{ borderRadius: 50, width: "40rem" }}
             />
           </Col>
@@ -93,7 +93,7 @@ const Digital = () => {
             <img
               src={health}
               alt="plant"
-              //   className="img-fluid"
+              className="super-zoom"
               style={{ borderRadius: 50, width: "35rem" }}
             />
           </Col>

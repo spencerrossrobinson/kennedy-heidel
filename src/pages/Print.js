@@ -96,7 +96,7 @@ const Print = () => {
             <img
               src={bowman}
               alt="plant"
-              className="zoom card-shadow"
+              className="super-zoom card-shadow"
               style={{ borderRadius: 50, width: "20rem" }}
             />
           </Col>
@@ -178,7 +178,7 @@ const Print = () => {
               <img
                 src={landing.img}
                 alt="plant"
-                className="m-3 card-shadow zoom"
+                className="m-3 card-shadow super-zoom"
                 style={{ borderRadius: 50, width: "25rem" }}
               />
             </Col>
