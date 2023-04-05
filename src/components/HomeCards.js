@@ -1,4 +1,4 @@
-import { Fade, Zoom } from "react-awesome-reveal";
+import { Slide, Zoom } from "react-awesome-reveal";
 import {
   Card,
   CardBody,
@@ -59,37 +59,27 @@ const HomeCards = () => {
   ];
 
   return (
-    <div className="mt-5 " style={{ marginBottom: 150 }}>
-      <Row
-        className="card-shadow blue-background py-4 "
-        style={{
-          borderTopLeftRadius: 100,
-          borderBottomLeftRadius: 100,
-          borderTopRightRadius: 100,
-          borderBottomRightRadius: 100,
-        }}
-      >
-        <Row
-          className="card-shadow orange-background m-0"
-          style={{
-            borderTopLeftRadius: 300,
-            borderBottomLeftRadius: 300,
-            borderTopRightRadius: 300,
-            borderBottomRightRadius: 300,
-          }}
-        >
-          <Fade>
+    <div className="mt-5 " id="home-card" style={{ marginBottom: 150 }}>
+      <Row className="text-center m-auto">
+        <Col className="py-4 ">
+          <Slide>
             <h1
-              className="text-center m-5 header-font"
-              style={{ fontSize: 75, color: "white", fontWeight: 700 }}
+              className="text-center m-5 header-font zoom"
+              style={{
+                fontSize: 95,
+                fontWeight: 700,
+                textDecoration: "underline",
+                textDecorationColor: "#4faaa7",
+              }}
+              md={4}
             >
               Expertise
             </h1>
-          </Fade>
-        </Row>
+          </Slide>
+        </Col>
       </Row>
       {/* mapping through the cardData to display 5 cards that will eventually be links on the home page */}
-      <Row style={{ marginTop: 100 }}>
+      <Row>
         {cardData.map((card) => (
           <Col
             className="zoom m-auto text-center"

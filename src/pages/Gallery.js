@@ -21,12 +21,12 @@ const Gallery = () => {
         </Row>
         <Row className="m-auto text-center">
           {GALLERY.map((pic) => (
-            <Col xs={4} className="m-auto">
+            <Col xs={12} sm={6} lg={4} className="m-auto">
               <img
                 src={pic.img}
                 alt=""
                 style={{ width: "20rem", borderRadius: 25 }}
-                className="mega-zoom card-shadow"
+                className="mega-zoom card-shadow m-3"
               />
             </Col>
           ))}

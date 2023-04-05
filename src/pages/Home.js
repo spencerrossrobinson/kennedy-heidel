@@ -51,7 +51,7 @@ const Home = () => {
             </Slide>
           </Col>
         </Row>
-        <Row className="p-3" style={{ marginTop: 100, marginBottom: 100 }}>
+        <Row className="p-3" style={{ marginTop: 100, marginBottom: 50 }}>
           <Col
             className="text-center zoom p-5 m-auto green-background"
             style={{ borderBottomLeftRadius: 200, color: "white" }}
@@ -111,30 +111,27 @@ const Home = () => {
             >
               Kennedy Heidel Copywriter
             </h1>
-            <div
-              className="green-background p-5"
-              // style={{ borderBottomRightRadius: 200 }}
-            >
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Exercitationem, rerum. Aspernatur fugiat laborum sunt a numquam
-                obcaecati, inventore aperiam deleniti quia at ullam eveniet
-                beatae assumenda voluptates, laboriosam
-                <br />
-                labore ad. Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Non cupiditate blanditiis fugit a maxime? Libero
-                voluptatem blanditiis at consequatur labore nam voluptas
-                corrupti explicabo! Soluta, quidem omnis? Error, consectetur
-                iste!
-              </p>
+            <p className="green-background p-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem, rerum. Aspernatur fugiat laborum sunt a numquam
+              obcaecati, inventore aperiam deleniti quia at ullam eveniet beatae
+              assumenda voluptates, laboriosam
+              <br />
+              labore ad. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Non cupiditate blanditiis fugit a maxime? Libero voluptatem
+              blanditiis at consequatur labore nam voluptas corrupti explicabo!
+              Soluta, quidem omnis? Error, consectetur iste!
+            </p>
+            <p>
               <Link
                 to="https://www.kennedyheidel.com/_files/ugd/1b3afa_4220e04dd2f446e58c6a9d4d400ccc50.pdf"
                 target="_blank"
                 style={{ color: "inherit", textDecoration: "none" }}
+                className="text-center"
               >
-                <Button className="bottom-header-background">RESUME</Button>
+                <Button className="orange-background">RESUME</Button>
               </Link>
-            </div>
+            </p>
           </Col>
         </Row>
       </Container>

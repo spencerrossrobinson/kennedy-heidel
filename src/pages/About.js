@@ -1,8 +1,9 @@
 import { Slide } from "react-awesome-reveal";
-import { Container, Row, Col } from "reactstrap";
+import { Container, Row, Col, Button } from "reactstrap";
 import headshot from "../imgs/headshots/headshot-front.jpg";
 import { Bounce } from "react-awesome-reveal";
 import resume from "../imgs/headshots/ken-resume.png";
+import { Link } from "react-router-dom";
 
 const About = () => {
   //about page for ken
@@ -51,6 +52,27 @@ const About = () => {
                 natus, nemo eligendi ipsam, atque nihil. Aliquam cumque dolores
                 dolore praesentium exercitationem neque nisi.
               </p>
+              <Row className="text-center">
+                <Col xs={4}>
+                  <Link
+                    to="/gallery"
+                    style={{ color: "inherit", textDecoration: "none" }}
+                  >
+                    <Button className="bottom-header-background">
+                      Gallery of Work
+                    </Button>
+                  </Link>
+                </Col>
+                <Col xs={4}>
+                  <Link
+                    to="https://www.kennedyheidel.com/_files/ugd/1b3afa_4220e04dd2f446e58c6a9d4d400ccc50.pdf"
+                    target="_blank"
+                    style={{ color: "inherit", textDecoration: "none" }}
+                  >
+                    <Button className="bottom-header-background">RESUME</Button>
+                  </Link>
+                </Col>
+              </Row>
             </Bounce>
           </Col>
           {/* headshot of ken */}
