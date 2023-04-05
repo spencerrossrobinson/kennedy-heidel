@@ -9,13 +9,9 @@ import {
   Row,
 } from "reactstrap";
 import { Bounce } from "react-awesome-reveal";
-import slideOne from "../imgs/home/handNcoffe.jpg";
-import slideTwo from "../imgs/home/laptopNcoffee.jpg";
-import slideThree from "../imgs/home/cactusplant.jpg";
 
 const items = [
   {
-    src: slideOne,
     altText: "Slide 1",
     person: "Dave Saunders",
     job: "Chief Idea Officer at Madison+Main",
@@ -24,7 +20,6 @@ const items = [
     key: 1,
   },
   {
-    src: slideTwo,
     altText: "Slide 2",
     person: "Dr. Mitchell",
     job: "Professor and Research Mentor",
@@ -33,7 +28,6 @@ const items = [
     key: 2,
   },
   {
-    src: slideThree,
     altText: "Slide 3",
     person: "Kent Jennings Brockwell",
     job: "Communications Manager at Madison+Main",

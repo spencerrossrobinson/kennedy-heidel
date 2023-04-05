@@ -1,10 +1,7 @@
 import { Button, Col, Container, Row } from "reactstrap";
 import HomeCar from "../components/HomeCar";
-import HomeHeader from "../components/HomeHeader";
 import "../css/home.css";
 import { Slide } from "react-awesome-reveal";
-import { Fade } from "react-awesome-reveal";
-import plant from "../imgs/home/right-plant.jpg";
 import HomeCards from "../components/HomeCards";
 import headshot from "../imgs/headshots/headshot-front.jpg";
 import mule from "../imgs/collateral/mule.png";

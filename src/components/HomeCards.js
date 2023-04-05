@@ -11,12 +11,11 @@ import {
   CardImgOverlay,
 } from "reactstrap";
 import "../css/home.css";
-import plant from "../imgs/home/right-plant.jpg";
-import show from "../imgs/digital/catch-show.png";
-import pickle from "../imgs/print/pickle-resize-2.png";
-import social from "../imgs/social/coffee-phone.png";
-import web from "../imgs/web/green-pink-screen.png";
-import collateral from "../imgs/collateral/mule.png";
+import show from "../imgs/home/show.png";
+import pickle from "../imgs/home/goodbye-pickle.png";
+import social from "../imgs/social/coffee.png";
+import web from "../imgs/web/brown-3.png";
+import collateral from "../imgs/home/recipe-book.png";
 import { Link } from "react-router-dom";
 
 const HomeCards = () => {
@@ -45,17 +44,17 @@ const HomeCards = () => {
     },
     {
       id: 4,
-      title: "SOCIAL",
-      link: "social",
-      imageUrl: social,
-      background: "#4faaa7",
-    },
-    {
-      id: 5,
       title: "WEB",
       link: "web",
       imageUrl: web,
       background: "#eac761",
+    },
+    {
+      id: 5,
+      title: "SOCIAL",
+      link: "social",
+      imageUrl: social,
+      background: "#4faaa7",
     },
   ];
 
@@ -92,7 +91,13 @@ const HomeCards = () => {
       {/* mapping through the cardData to display 5 cards that will eventually be links on the home page */}
       <Row style={{ marginTop: 100 }}>
         {cardData.map((card) => (
-          <Col className="zoom m-auto text-center" xs={12} sm={12} md={5}>
+          <Col
+            className="zoom m-auto text-center"
+            xs={12}
+            sm={12}
+            md={6}
+            lg={4}
+          >
             <Link
               to={card.link}
               style={{ color: "inherit", textDecoration: "none" }}
@@ -100,7 +105,7 @@ const HomeCards = () => {
               <img
                 src={card.imageUrl}
                 alt="plant"
-                className=""
+                className="m-5"
                 style={{ borderRadius: 50, background: "none", width: "25rem" }}
               />
               <h1
