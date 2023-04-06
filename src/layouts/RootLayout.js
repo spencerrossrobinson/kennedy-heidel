@@ -120,7 +120,10 @@ const RootLayout = () => {
                 </NavLink>
               </NavItem>
               <NavItem>
-                <Link to="https://www.instagram.com/kennedyheidel/">
+                <Link
+                  to="https://www.instagram.com/kennedyheidel/"
+                  target="_blank"
+                >
                   <FontAwesomeIcon
                     icon={faInstagram}
                     className="mx-2"
@@ -130,7 +133,10 @@ const RootLayout = () => {
                 </Link>
               </NavItem>
               <NavItem>
-                <Link to="https://www.linkedin.com/in/kennedyheidel/">
+                <Link
+                  to="https://www.linkedin.com/in/kennedyheidel/"
+                  target="_blank"
+                >
                   <FontAwesomeIcon
                     icon={faLinkedin}
                     className="mx-2"
