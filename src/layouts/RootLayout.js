@@ -130,7 +130,7 @@ const RootLayout = () => {
                 </Link>
               </NavItem>
               <NavItem>
-                <Link to="https://www.linkedin.com/">
+                <Link to="https://www.linkedin.com/in/kennedyheidel/">
                   <FontAwesomeIcon
                     icon={faLinkedin}
                     className="mx-2"
