@@ -141,7 +141,7 @@ const RootLayout = () => {
                     icon={faLinkedin}
                     className="mx-2"
                     size="2x"
-                    style={{ color: "#4FAAA7" }}
+                    style={{ color: "#b7cf99" }}
                   />
                 </Link>
               </NavItem>

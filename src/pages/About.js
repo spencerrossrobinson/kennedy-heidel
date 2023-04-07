@@ -6,6 +6,9 @@ import resume from "../imgs/headshots/ken-resume.png";
 import { Link } from "react-router-dom";
 
 const About = () => {
+  const email = "heidelkg@gmail.com";
+  const mailtoUrl = `mailto:${email}`;
+
   //about page for ken
   return (
     <div style={{ marginTop: 100 }}>
@@ -58,7 +61,7 @@ const About = () => {
                     to="/gallery"
                     style={{ color: "inherit", textDecoration: "none" }}
                   >
-                    <Button className="bottom-header-background">
+                    <Button className="green-background">
                       Gallery of Work
                     </Button>
                   </Link>
@@ -67,9 +70,21 @@ const About = () => {
                   <Link
                     to="https://www.kennedyheidel.com/_files/ugd/1b3afa_4220e04dd2f446e58c6a9d4d400ccc50.pdf"
                     target="_blank"
+                    style={{
+                      color: "inherit",
+                      textDecoration: "none",
+                      border: "none",
+                    }}
+                  >
+                    <Button className="yellow-background">RESUME</Button>
+                  </Link>
+                </Col>
+                <Col xs={4}>
+                  <Link
+                    to={mailtoUrl}
                     style={{ color: "inherit", textDecoration: "none" }}
                   >
-                    <Button className="bottom-header-background">RESUME</Button>
+                    <Button className="red-background">Email Me!</Button>
                   </Link>
                 </Col>
               </Row>
