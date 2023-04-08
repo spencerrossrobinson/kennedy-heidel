@@ -14,17 +14,17 @@ const Home = () => {
         {/* setting up the header for the home page, ken said she loved big letters that made a statement so running with this size for the moment until she can review */}
         <Row
           className=" mt-0 pb-5 blue-background card-shadow"
-          style={{ borderBottomRightRadius: 500 }}
+          style={{ borderBottomRightRadius: 300 }}
         >
           <Col
             className=" orange-background p-5 pb-2 mb-5 mt-0"
-            style={{ color: "white", borderBottomRightRadius: 500 }}
+            style={{ color: "white", borderBottomRightRadius: 300 }}
           >
             {/* adding in a text animation  */}
             <Slide cascade>
               <h1
                 style={{
-                  fontSize: 120,
+                  fontSize: 100,
                   fontWeight: 700,
                   fontStyle: "bold",
                 }}
@@ -87,7 +87,7 @@ const Home = () => {
         <HomeCar />
         {/* small bio section at the bottom, need to add in social media icons */}
 
-        <Row className="mb-5 mt-5 p-3">
+        <Row className="mb-5  p-3">
           <Col className="text-center mb-5" xs={12} md={4}>
             <img
               src={headshot}

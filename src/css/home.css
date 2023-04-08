@@ -55,7 +55,7 @@
 }
 @media (max-width: 575px) {
   .carousel-item {
-    height: 700px;
+    height: 900px;
   }
   .carousel img {
     position: absolute;
@@ -88,7 +88,7 @@
 }
 @media (min-width: 768px) {
   .carousel-item {
-    height: 700px;
+    height: 500px;
   }
   .carousel img {
     position: absolute;
@@ -106,7 +106,7 @@
 }
 @media (min-width: 992px) {
   .carousel-item {
-    height: 700px;
+    height: 400px;
   }
   .carousel img {
     position: absolute;
@@ -118,7 +118,7 @@
 }
 @media (min-width: 1200px) {
   .carousel-item {
-    height: 600px;
+    height: 400px;
   }
   .carousel img {
     position: absolute;

@@ -96,7 +96,7 @@ const HomeCards = () => {
                 src={card.imageUrl}
                 alt="plant"
                 className="m-5"
-                style={{ borderRadius: 50, background: "none", width: "25rem" }}
+                style={{ borderRadius: 50, background: "none", width: "20rem" }}
               />
               <h1
                 className="text-center header-font card-shadow p-2"

@@ -70,10 +70,13 @@ const HomeCar = (args) => {
       >
         {/* adding a bounce animation to the text */}
         <Bounce>
-          <h1 style={{ fontWeight: 700, fontStyle: "bold" }}>
+          <h1 style={{ fontWeight: 700, fontStyle: "bold", fontSize: 30 }}>
             {item.description}
           </h1>
-          <h2 className="p-2" style={{ fontWeight: 700, fontStyle: "bold" }}>
+          <h2
+            className="p-2"
+            style={{ fontWeight: 700, fontStyle: "bold", fontSize: 40 }}
+          >
             {item.person}
           </h2>
           <h2 style={{ fontWeight: 700, fontStyle: "italic" }}>{item.job}</h2>
@@ -90,7 +93,7 @@ const HomeCar = (args) => {
     >
       <h1
         className="text-center header-font"
-        style={{ fontWeight: 700, fontStyle: "bold", fontSize: 85 }}
+        style={{ fontWeight: 700, fontStyle: "bold", fontSize: 65 }}
       >
         Testimonials
       </h1>
