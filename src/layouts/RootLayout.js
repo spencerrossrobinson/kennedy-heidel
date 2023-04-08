@@ -16,8 +16,10 @@ import { Outlet, NavLink, Link } from "react-router-dom";
 import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ScrollToTop from "../helper/ScrollToTop";
+import logo from "../imgs/home/logo-2.png";
 
 //root layout page that displays the navbar, all other routes are nested in this one
 const RootLayout = () => {
@@ -27,6 +29,9 @@ const RootLayout = () => {
   const toggle = () => setIsOpen(!isOpen);
   const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
 
+  const email = "heidelkg@gmail.com";
+  const mailtoUrl = `mailto:${email}`;
+
   return (
     <div>
       <header>
@@ -35,15 +40,22 @@ const RootLayout = () => {
           className="custom-nav"
           expand="md"
           fixed="top"
-          style={{ background: "white" }}
+          style={{ background: "rgba(255, 255, 255, 0.8)" }}
         >
           <NavbarBrand href="/" className="header-font">
-            Kennedy Heidel
+            <img
+              alt="logo"
+              src={logo}
+              style={{
+                width: "9rem",
+              }}
+              className=""
+            />
           </NavbarBrand>
-          <NavbarText style={{ color: "#4FAAA7" }}>Copywriter.</NavbarText>
+          {/* <NavbarText style={{ color: "#4FAAA7" }}>Copywriter.</NavbarText> */}
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
-            <Nav className="ms-auto" navbar>
+            <Nav className="ml-auto" navbar>
               <NavItem>
                 <NavLink
                   to="/about"
@@ -119,33 +131,39 @@ const RootLayout = () => {
                   GALLERY
                 </NavLink>
               </NavItem>
-              <NavItem>
-                <Link
-                  to="https://www.instagram.com/kennedyheidel/"
-                  target="_blank"
-                >
-                  <FontAwesomeIcon
-                    icon={faInstagram}
-                    className="mx-2"
-                    size="2x"
-                    style={{ color: "#4FAAA7" }}
-                  />
-                </Link>
-              </NavItem>
-              <NavItem>
-                <Link
-                  to="https://www.linkedin.com/in/kennedyheidel/"
-                  target="_blank"
-                >
-                  <FontAwesomeIcon
-                    icon={faLinkedin}
-                    className="mx-2"
-                    size="2x"
-                    style={{ color: "#b7cf99" }}
-                  />
-                </Link>
-              </NavItem>
             </Nav>
+            <div className=" ms-auto">
+              <Link
+                to="https://www.instagram.com/kennedyheidel/"
+                target="_blank"
+              >
+                <FontAwesomeIcon
+                  icon={faInstagram}
+                  className="mx-2"
+                  size="2x"
+                  style={{ color: "#4FAAA7" }}
+                />
+              </Link>
+              <Link
+                to="https://www.linkedin.com/in/kennedyheidel/"
+                target="_blank"
+              >
+                <FontAwesomeIcon
+                  icon={faLinkedin}
+                  className="mx-2"
+                  size="2x"
+                  style={{ color: "#b7cf99" }}
+                />
+              </Link>
+              <Link to={mailtoUrl}>
+                <FontAwesomeIcon
+                  icon={faEnvelope}
+                  className="mx-2"
+                  size="2x"
+                  style={{ color: "#f7892e" }}
+                />
+              </Link>
+            </div>
           </Collapse>
         </Navbar>
       </header>

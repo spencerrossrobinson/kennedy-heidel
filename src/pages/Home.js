@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div>
+    <div style={{ marginTop: 135 }}>
       <Container fluid className="" style={{ background: "white" }}>
         {/* setting up the header for the home page, ken said she loved big letters that made a statement so running with this size for the moment until she can review */}
         <Row
@@ -17,7 +17,7 @@ const Home = () => {
           style={{ borderBottomRightRadius: 500 }}
         >
           <Col
-            className=" orange-background p-5 pb-2 mb-5 mt-3"
+            className=" orange-background p-5 pb-2 mb-5 mt-0"
             style={{ color: "white", borderBottomRightRadius: 500 }}
           >
             {/* adding in a text animation  */}
@@ -122,14 +122,24 @@ const Home = () => {
               blanditiis at consequatur labore nam voluptas corrupti explicabo!
               Soluta, quidem omnis? Error, consectetur iste!
             </p>
-            <p>
+            <p className="text-center">
               <Link
                 to="https://www.kennedyheidel.com/_files/ugd/1b3afa_4220e04dd2f446e58c6a9d4d400ccc50.pdf"
                 target="_blank"
-                style={{ color: "inherit", textDecoration: "none" }}
+                style={{
+                  color: "inherit",
+                  textDecoration: "none",
+                }}
                 className="text-center"
               >
-                <Button className="orange-background">RESUME</Button>
+                <Button
+                  className=""
+                  color="success"
+                  outline
+                  style={{ width: "45rem" }}
+                >
+                  RESUME
+                </Button>
               </Link>
             </p>
           </Col>

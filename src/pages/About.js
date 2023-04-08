@@ -55,39 +55,6 @@ const About = () => {
                 natus, nemo eligendi ipsam, atque nihil. Aliquam cumque dolores
                 dolore praesentium exercitationem neque nisi.
               </p>
-              <Row className="text-center">
-                <Col xs={4}>
-                  <Link
-                    to="/gallery"
-                    style={{ color: "inherit", textDecoration: "none" }}
-                  >
-                    <Button className="green-background">
-                      Gallery of Work
-                    </Button>
-                  </Link>
-                </Col>
-                <Col xs={4}>
-                  <Link
-                    to="https://www.kennedyheidel.com/_files/ugd/1b3afa_4220e04dd2f446e58c6a9d4d400ccc50.pdf"
-                    target="_blank"
-                    style={{
-                      color: "inherit",
-                      textDecoration: "none",
-                      border: "none",
-                    }}
-                  >
-                    <Button className="yellow-background">RESUME</Button>
-                  </Link>
-                </Col>
-                <Col xs={4}>
-                  <Link
-                    to={mailtoUrl}
-                    style={{ color: "inherit", textDecoration: "none" }}
-                  >
-                    <Button className="red-background">Email Me!</Button>
-                  </Link>
-                </Col>
-              </Row>
             </Bounce>
           </Col>
           {/* headshot of ken */}
@@ -101,20 +68,41 @@ const About = () => {
           </Col>
         </Row>
 
-        <Row className="">
-          <Col className="text-center">
-            <h1
-              className="header-font text-center m-5 yellow-background"
-              style={{ fontSize: 75, color: "white", borderRadius: 50 }}
+        <Row className="text-center">
+          <Col xs={4}>
+            <Link
+              to="/gallery"
+              style={{ color: "inherit", textDecoration: "none" }}
             >
-              Resume
-            </h1>
-            <img
-              src={resume}
-              alt=""
-              className=" m-auto"
-              style={{ width: "50rem" }}
-            />
+              <Button className="" color="success" outline>
+                Gallery of Work
+              </Button>
+            </Link>
+          </Col>
+          <Col xs={4}>
+            <Link
+              to="https://www.kennedyheidel.com/_files/ugd/1b3afa_4220e04dd2f446e58c6a9d4d400ccc50.pdf"
+              target="_blank"
+              style={{
+                color: "inherit",
+                textDecoration: "none",
+                border: "none",
+              }}
+            >
+              <Button className="" color="success" outline>
+                RESUME
+              </Button>
+            </Link>
+          </Col>
+          <Col xs={4}>
+            <Link
+              to={mailtoUrl}
+              style={{ color: "inherit", textDecoration: "none" }}
+            >
+              <Button className="" color="success" outline>
+                Email Me!
+              </Button>
+            </Link>
           </Col>
         </Row>
       </Container>
