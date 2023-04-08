@@ -5,7 +5,7 @@ import { Slide } from "react-awesome-reveal";
 const Gallery = () => {
   return (
     //gallery page for a collage of all kens work
-    <div style={{ marginTop: 100 }}>
+    <div style={{ marginTop: 150 }}>
       <Container fluid>
         <Row style={{ marginBottom: 100 }}>
           <Col className="text-center">

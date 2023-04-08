@@ -37,7 +37,7 @@ const Home = () => {
                 Richmond, Virginia
               </h1>
               <h1
-                className=" mt-4 mb-5"
+                className=" mt-4 mb-5 d-none d-md-block"
                 style={{ fontWeight: 500, fontSize: 50 }}
               >
                 Juggling Words with Madison & Main
@@ -56,7 +56,7 @@ const Home = () => {
             className="text-center zoom p-5 m-auto green-background"
             style={{ borderBottomLeftRadius: 200, color: "white" }}
             xs={10}
-            sm={8}
+            md={8}
           >
             <h2
               className="mt-5 header-font"
@@ -71,7 +71,7 @@ const Home = () => {
               Strategist with six years of agency and in-house experience.
             </p>
           </Col>
-          <Col className="text-center m-auto" xs={12} sm={4}>
+          <Col className="text-center m-auto" xs={12} md={4}>
             <img
               src={mule}
               alt="plant"
@@ -88,7 +88,7 @@ const Home = () => {
         {/* small bio section at the bottom, need to add in social media icons */}
 
         <Row className="mb-5 mt-5 p-3">
-          <Col className="text-center mb-5" xs={12} sm={4}>
+          <Col className="text-center mb-5" xs={12} md={4}>
             <img
               src={headshot}
               alt="Headshot of Kennedy Heidel"
@@ -102,8 +102,8 @@ const Home = () => {
               color: "white",
               fontWeight: 500,
             }}
-            xs={10}
-            sm={8}
+            xs={12}
+            md={8}
           >
             <h1
               className="blue-background p-5 text-center header-font"
@@ -122,7 +122,7 @@ const Home = () => {
               blanditiis at consequatur labore nam voluptas corrupti explicabo!
               Soluta, quidem omnis? Error, consectetur iste!
             </p>
-            <p className="text-center">
+            <p className="text-center m-auto">
               <Link
                 to="https://www.kennedyheidel.com/_files/ugd/1b3afa_4220e04dd2f446e58c6a9d4d400ccc50.pdf"
                 target="_blank"
@@ -136,7 +136,8 @@ const Home = () => {
                   className=""
                   color="success"
                   outline
-                  style={{ width: "45rem" }}
+                  style={{ width: "30rem" }}
+                  size="lg"
                 >
                   RESUME
                 </Button>

@@ -11,7 +11,7 @@ const About = () => {
 
   //about page for ken
   return (
-    <div style={{ marginTop: 100 }}>
+    <div style={{ marginTop: 140 }}>
       <Container fluid>
         <Row className="m-3">
           {/* header, again using large font, text needs to be edited */}
@@ -68,43 +68,61 @@ const About = () => {
           </Col>
         </Row>
 
-        <Row className="text-center">
-          <Col xs={4}>
+        <Row className="text-center m-auto">
+          <Col xs={4} classname="m-auto">
             <Link
               to="/gallery"
               style={{ color: "inherit", textDecoration: "none" }}
             >
-              <Button className="" color="success" outline>
-                Gallery of Work
+              <Button
+                className=""
+                color="success"
+                outline
+                size="lg"
+                style={{ width: "15rem" }}
+              >
+                Gallery
               </Button>
             </Link>
           </Col>
-          <Col xs={4}>
+          <Col xs={4} classname="m-auto">
             <Link
               to="https://www.kennedyheidel.com/_files/ugd/1b3afa_4220e04dd2f446e58c6a9d4d400ccc50.pdf"
               target="_blank"
               style={{
                 color: "inherit",
                 textDecoration: "none",
-                border: "none",
               }}
             >
-              <Button className="" color="success" outline>
+              <Button
+                className=""
+                color="success"
+                outline
+                size="lg"
+                style={{ width: "15rem" }}
+              >
                 RESUME
               </Button>
             </Link>
           </Col>
-          <Col xs={4}>
+          <Col xs={4} classname="m-auto">
             <Link
               to={mailtoUrl}
               style={{ color: "inherit", textDecoration: "none" }}
             >
-              <Button className="" color="success" outline>
+              <Button
+                className=""
+                color="success"
+                outline
+                size="lg"
+                style={{ width: "15rem" }}
+              >
                 Email Me!
               </Button>
             </Link>
           </Col>
         </Row>
+        <Row style={{ height: 100 }}></Row>
       </Container>
     </div>
   );
