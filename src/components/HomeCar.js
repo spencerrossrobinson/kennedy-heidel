@@ -4,11 +4,9 @@ import {
   CarouselItem,
   CarouselControl,
   CarouselIndicators,
-  CarouselCaption,
-  Container,
   Row,
 } from "reactstrap";
-import { Bounce } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const items = [
   {
@@ -69,7 +67,7 @@ const HomeCar = (args) => {
         className="text-center mt-5 carousel-item"
       >
         {/* adding a bounce animation to the text */}
-        <Bounce>
+        <Fade>
           <h1 style={{ fontWeight: 700, fontStyle: "bold", fontSize: 30 }}>
             {item.description}
           </h1>
@@ -80,7 +78,7 @@ const HomeCar = (args) => {
             {item.person}
           </h2>
           <h2 style={{ fontWeight: 700, fontStyle: "italic" }}>{item.job}</h2>
-        </Bounce>
+        </Fade>
       </CarouselItem>
     );
   });
