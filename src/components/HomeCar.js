@@ -86,7 +86,7 @@ const HomeCar = (args) => {
   return (
     <Row
       className="mt-5 p-5 text-center m-auto"
-      style={{ color: "#C6460F" }}
+      style={{ color: "#4faaa7" }}
       id="home-car"
     >
       <h1

@@ -30,13 +30,13 @@
   transition: 0.5s;
 }
 .super-zoom:hover {
-  transform: scale(1.3);
+  transform: scale(1.2);
 }
 .mega-zoom {
   transition: 0.5s;
 }
 .mega-zoom:hover {
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
 .card-shadow {
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),

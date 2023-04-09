@@ -1,8 +1,7 @@
 import { Slide } from "react-awesome-reveal";
 import { Container, Row, Col, Button } from "reactstrap";
 import headshot from "../imgs/headshots/headshot-front.jpg";
-import { Bounce } from "react-awesome-reveal";
-import resume from "../imgs/headshots/ken-resume.png";
+import { Fade } from "react-awesome-reveal";
 import { Link } from "react-router-dom";
 
 const About = () => {
@@ -35,7 +34,7 @@ const About = () => {
           }}
         >
           <Col className="mb-5 m-5" style={{ color: "white", fontWeight: 500 }}>
-            <Bounce>
+            <Fade>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Exercitationem, rerum. Aspernatur fugiat laborum sunt a numquam
@@ -55,7 +54,7 @@ const About = () => {
                 natus, nemo eligendi ipsam, atque nihil. Aliquam cumque dolores
                 dolore praesentium exercitationem neque nisi.
               </p>
-            </Bounce>
+            </Fade>
           </Col>
           {/* headshot of ken */}
           <Col className="m-0 p-0 text-center">

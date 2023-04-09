@@ -6,6 +6,7 @@ import HomeCards from "../components/HomeCards";
 import headshot from "../imgs/headshots/headshot-front.jpg";
 import mule from "../imgs/collateral/mule.png";
 import { Link } from "react-router-dom";
+import coffee from "../imgs/home/laptopNcoffee.jpg";
 
 const Home = () => {
   return (
@@ -56,7 +57,7 @@ const Home = () => {
             className="text-center zoom p-5 m-auto green-background"
             style={{ borderBottomLeftRadius: 200, color: "white" }}
             xs={10}
-            md={8}
+            lg={7}
           >
             <h2
               className="mt-5 header-font"
@@ -71,12 +72,12 @@ const Home = () => {
               Strategist with six years of agency and in-house experience.
             </p>
           </Col>
-          <Col className="text-center m-auto" xs={12} md={4}>
+          <Col className="text-center mt-5" xs={12} lg={5}>
             <img
-              src={mule}
-              alt="plant"
-              className="img-fluid"
-              style={{ borderRadius: 50 }}
+              src={coffee}
+              alt="kennedys laptop and coffee"
+              // className="img-fluid"
+              style={{ borderRadius: 50, width: "30rem" }}
             />
           </Col>
         </Row>

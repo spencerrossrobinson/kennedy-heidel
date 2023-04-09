@@ -1,15 +1,5 @@
-import { Slide, Zoom } from "react-awesome-reveal";
-import {
-  Card,
-  CardBody,
-  CardText,
-  CardTitle,
-  CardSubtitle,
-  Row,
-  Col,
-  CardImg,
-  CardImgOverlay,
-} from "reactstrap";
+import { Slide } from "react-awesome-reveal";
+import { Row, Col } from "reactstrap";
 import "../css/home.css";
 import show from "../imgs/home/show.png";
 import pickle from "../imgs/home/goodbye-pickle.png";
@@ -30,31 +20,31 @@ const HomeCards = () => {
     },
     {
       id: 2,
+      title: "SOCIAL",
+      link: "social",
+      imageUrl: social,
+      background: "#4faaa7",
+    },
+    {
+      id: 3,
       title: "PRINT",
       link: "print",
       imageUrl: pickle,
       background: "#b7cf99",
     },
     {
-      id: 3,
+      id: 4,
       title: "COLLATERAL",
       link: "collateral",
       imageUrl: collateral,
       background: "#f7892e",
     },
     {
-      id: 4,
+      id: 5,
       title: "WEB",
       link: "web",
       imageUrl: web,
       background: "#eac761",
-    },
-    {
-      id: 5,
-      title: "SOCIAL",
-      link: "social",
-      imageUrl: social,
-      background: "#4faaa7",
     },
   ];
 

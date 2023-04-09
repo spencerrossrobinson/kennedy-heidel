@@ -179,7 +179,7 @@ const Print = () => {
                 src={landing.img}
                 alt="plant"
                 className="m-3 card-shadow super-zoom"
-                style={{ borderRadius: 50, width: "25rem" }}
+                style={{ borderRadius: 50, width: "20rem" }}
               />
             </Col>
           ))}

@@ -2,7 +2,6 @@ import { useState } from "react";
 import {
   Navbar,
   NavbarBrand,
-  NavbarText,
   NavbarToggler,
   Collapse,
   Nav,
@@ -13,7 +12,6 @@ import {
   DropdownItem,
 } from "reactstrap";
 import { Outlet, NavLink, Link } from "react-router-dom";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";

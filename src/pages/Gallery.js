@@ -26,7 +26,7 @@ const Gallery = () => {
                 src={pic.img}
                 alt=""
                 style={{ width: "20rem", borderRadius: 25 }}
-                className="mega-zoom card-shadow m-3"
+                className="mega-zoom m-3"
               />
             </Col>
           ))}
