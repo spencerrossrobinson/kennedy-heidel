@@ -77,7 +77,7 @@ const Home = () => {
               src={coffee}
               alt="kennedys laptop and coffee"
               // className="img-fluid"
-              style={{ borderRadius: 50, width: "30rem" }}
+              style={{ borderRadius: 30, width: "30rem" }}
             />
           </Col>
         </Row>
