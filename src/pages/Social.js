@@ -1,6 +1,7 @@
 import { Col, Container, Row } from "reactstrap";
 import { Slide } from "react-awesome-reveal";
 import coffee from "../imgs/social/playbook.png";
+import bowman from "../imgs/social/coffee.png";
 import allPosts from "../imgs/social/all-posts.png";
 import { Link } from "react-router-dom";
 
@@ -55,7 +56,7 @@ const Social = () => {
           </Col>
           <Col className="text-center m-auto" xs={12} lg={6}>
             <img
-              src={coffee}
+              src={bowman}
               alt="plant"
               className="super-zoom"
               style={{ borderRadius: 50, width: "40rem" }}
