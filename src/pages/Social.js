@@ -1,6 +1,6 @@
 import { Col, Container, Row } from "reactstrap";
 import { Slide } from "react-awesome-reveal";
-import coffee from "../imgs/social/coffee.png";
+import coffee from "../imgs/social/playbook.png";
 import allPosts from "../imgs/social/all-posts.png";
 import { Link } from "react-router-dom";
 
@@ -115,7 +115,7 @@ const Social = () => {
             lg={6}
           >
             <Link
-              to="https://wythken.com/"
+              to="https://www.instagram.com/madisonmain/"
               style={{ color: "inherit", textDecoration: "none" }}
               target="_blank"
             >
@@ -148,18 +148,12 @@ const Social = () => {
             xs={12}
             sm={5}
           >
-            <Link
-              to="https://www.epicrx.com/"
-              style={{ color: "inherit", textDecoration: "none" }}
-              target="_blank"
+            <h2
+              className="mt-5 zoom"
+              style={{ fontWeight: 700, textDecoration: "underline" }}
             >
-              <h2
-                className="mt-5 zoom"
-                style={{ fontWeight: 700, textDecoration: "underline" }}
-              >
-                EXAMPLE SOCIAL MEDIA PLAYBOOK
-              </h2>
-            </Link>
+              EXAMPLE SOCIAL MEDIA PLAYBOOK
+            </h2>
             <p className="mb-5">
               Spearheaded the creation of Social Media Playbooks at my current
               agency.
@@ -173,7 +167,7 @@ const Social = () => {
             <img
               src={coffee}
               alt="plant"
-              className="img-fluid"
+              className="img-fluid zoom"
               style={{ borderRadius: 50 }}
             />
           </Col>
@@ -188,18 +182,12 @@ const Social = () => {
             xs={12}
             lg={5}
           >
-            <Link
-              to="https://www.epicrx.com/"
-              style={{ color: "inherit", textDecoration: "none" }}
-              target="_blank"
+            <h2
+              className="mt-5 zoom"
+              style={{ fontWeight: 700, textDecoration: "underline" }}
             >
-              <h2
-                className="mt-5 zoom"
-                style={{ fontWeight: 700, textDecoration: "underline" }}
-              >
-                EXAMPLE SOCIAL MEDIA PLAYBOOK
-              </h2>
-            </Link>
+              EXAMPLE SOCIAL MEDIA PLAYBOOK
+            </h2>
             <p className="mb-5">
               Spearheaded the creation of Social Media Playbooks at my current
               agency.

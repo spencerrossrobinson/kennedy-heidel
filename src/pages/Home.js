@@ -7,6 +7,7 @@ import headshot from "../imgs/headshots/headshot-front.jpg";
 import mule from "../imgs/collateral/mule.png";
 import { Link } from "react-router-dom";
 import coffee from "../imgs/home/laptopNcoffee.jpg";
+import ken from "../imgs/home/ken-home.png";
 
 const Home = () => {
   return (
@@ -61,9 +62,9 @@ const Home = () => {
           >
             <h2
               className="mt-5 header-font"
-              style={{ fontWeight: 700, fontSize: 60 }}
+              style={{ fontWeight: 700, fontSize: 40 }}
             >
-              A Successful Copywriter Leading The Way
+              A Successful Content Strategist Leading The Way
             </h2>
             <p className="mb-5" style={{ fontSize: 20 }}>
               Hello there human! Or robot! Welcome to the portfolio of Kennedy
@@ -72,9 +73,9 @@ const Home = () => {
               Strategist with six years of agency and in-house experience.
             </p>
           </Col>
-          <Col className="text-center mt-5" xs={12} lg={5}>
+          <Col className="text-center mt-4 zoom" xs={12} lg={5}>
             <img
-              src={coffee}
+              src={ken}
               alt="kennedys laptop and coffee"
               // className="img-fluid"
               style={{ borderRadius: 30, width: "30rem" }}
@@ -110,18 +111,21 @@ const Home = () => {
               className="blue-background p-5 text-center header-font"
               style={{ borderTopRightRadius: 200 }}
             >
-              Kennedy Heidel Copywriter
+              About Kennedy Heidel
             </h1>
             <p className="green-background p-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Exercitationem, rerum. Aspernatur fugiat laborum sunt a numquam
-              obcaecati, inventore aperiam deleniti quia at ullam eveniet beatae
-              assumenda voluptates, laboriosam
+              Short Form Copy:
               <br />
-              labore ad. Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Non cupiditate blanditiis fugit a maxime? Libero voluptatem
-              blanditiis at consequatur labore nam voluptas corrupti explicabo!
-              Soluta, quidem omnis? Error, consectetur iste!
+              Writer. Off-tempo but enthusiastic dancer.
+              <br />
+              <br />
+              Long Form Copy:
+              <br />
+              I'm a communications guru, copywriting extraordinaire, and
+              sensational strategist with extensive experience in developing and
+              building strong brands. With a keen eye for detail and a passion
+              for words, I have honed my skills in content creation, crafting
+              snappy slogans, and writing witty words that convert.
             </p>
             <p className="text-center m-auto">
               <Link

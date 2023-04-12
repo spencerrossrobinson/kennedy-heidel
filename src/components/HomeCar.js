@@ -11,27 +11,43 @@ import { Fade } from "react-awesome-reveal";
 const items = [
   {
     altText: "Slide 1",
-    person: "Dave Saunders",
-    job: "Chief Idea Officer at Madison+Main",
-    description:
-      "Kennedy is an excellent intern and a fine example of the creative minds you are turning out in beautiful downtown Harrisonburg, Virginia. Although we mainly hire VCU Rams, I have changed my mind completely about JMU and will be sending my children there. I have only you to thank! Godspeed, and do not go gentle into that good night. ",
+    description: `“Kennedy is a strategy guru extraordinaire.”`,
     key: 1,
   },
   {
     altText: "Slide 2",
-    person: "Dr. Mitchell",
-    job: "Professor and Research Mentor",
-    description:
-      "Kennedy not only excels academically but also show excitement for the material we study and great attention to detail. Her continued pursuit of knowledge makes her an active participant and great leader in class. Kennedy’s outgoing personality and enjoyment of the course make her a pleasure to teach and work with, and her projects and writing speak to the level of care and commitment she strives for. ",
+    description: `"Kennedy is so positive and reliable, I'm pretty sure she could sell ice to a polar bear in the middle of winter. Her strategic approach, creative flair, and attention to detail are like a triple threat."`,
     key: 2,
   },
   {
     altText: "Slide 3",
-    person: "Kent Jennings Brockwell",
-    job: "Communications Manager at Madison+Main",
-    description:
-      "A skilled writer and captivating storyteller, her immense level of raw talent will serve her well over the development of her career, and I can't wait to see how high she'll fly. Her bubbly enthusiasm for both life and work is sickeningly genuine and pure. She single-handedly set the bar so high for our internship program, I'm actually annoyed. Ugh. Way to go, Kennedy. You ruined it for everyone else.",
+    description: `"She’s a horse whisperer for websites and SEO copy."`,
     key: 3,
+  },
+  {
+    altText: "Slide 4",
+    description: `"Kennedy is a joy to work with. She is creative enough to write puns that make you snort-laugh and detail-oriented enough to catch even the tiniest typo."`,
+    key: 4,
+  },
+  {
+    altText: "Slide 5",
+    description: `“She is so easy to work with, gets along with everyone, and is truly a joy to be around.” – Boyfriend (under duress) `,
+    key: 5,
+  },
+  {
+    altText: "Slide 6",
+    description: `"Kennedy waves her magic mouse and turns blank pages into persuasive masterpieces in no time. Her strategic thinking, creative spark, and obsessive attention to detail are the secret sauce to success. Set your watch to her deadlines — you won’t be disappointed."`,
+    key: 6,
+  },
+  {
+    altText: "Slide 7",
+    description: `“She’s truly dependable and always on time.” – Local Bartender `,
+    key: 7,
+  },
+  {
+    altText: "Slide 8",
+    description: `"Kennedy has an uncanny ability to take the ideas you have in your head and create beautifully written collateral."`,
+    key: 8,
   },
 ];
 
@@ -71,13 +87,13 @@ const HomeCar = (args) => {
           <h1 style={{ fontWeight: 700, fontStyle: "bold", fontSize: 30 }}>
             {item.description}
           </h1>
-          <h2
+          {/* <h2
             className="p-2"
             style={{ fontWeight: 700, fontStyle: "bold", fontSize: 40 }}
           >
             {item.person}
           </h2>
-          <h2 style={{ fontWeight: 700, fontStyle: "italic" }}>{item.job}</h2>
+          <h2 style={{ fontWeight: 700, fontStyle: "italic" }}>{item.job}</h2> */}
         </Fade>
       </CarouselItem>
     );
@@ -97,6 +113,7 @@ const HomeCar = (args) => {
       </h1>
       {/* carousel set up with indicators, control, and displaying the slides declared above that maps through items object and shows testimonials */}
       <Carousel
+        interval={4000}
         activeIndex={activeIndex}
         next={next}
         previous={previous}

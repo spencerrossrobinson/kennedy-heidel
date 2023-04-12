@@ -15,8 +15,34 @@ import milk from "../imgs/digital/maola-milk.png";
 import mule from "../imgs/home/recipe-book.png";
 import toast from "../imgs/collateral/toast-2.png";
 import epic from "../imgs/collateral/epic-2.png";
+import summer from "../imgs/web/summer.jpg";
+import gold from "../imgs/digital/double-gold.jpg";
+import brownPhone from "../imgs/digital/brown-phone.png";
+import realo from "../imgs/digital/realo.png";
+import dominion from "../imgs/digital/dominion.png";
+import realo2 from "../imgs/digital/realo2.png";
 
 export const GALLERY = [
+  {
+    id: 18,
+    img: gold,
+  },
+  {
+    id: 19,
+    img: brownPhone,
+  },
+  {
+    id: 20,
+    img: dominion,
+  },
+  {
+    id: 21,
+    img: realo2,
+  },
+  {
+    id: 17,
+    img: summer,
+  },
   {
     id: 0,
     img: bowman,
@@ -55,6 +81,10 @@ export const GALLERY = [
     img: show,
   },
   {
+    id: 16,
+    img: wythken,
+  },
+  {
     id: 9,
     img: paintbrush,
   },
@@ -81,9 +111,5 @@ export const GALLERY = [
   {
     id: 15,
     img: brown,
-  },
-  {
-    id: 16,
-    img: wythken,
   },
 ];

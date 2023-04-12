@@ -58,8 +58,8 @@ const HomeCards = () => {
               style={{
                 fontSize: 95,
                 fontWeight: 700,
-                textDecoration: "underline",
-                textDecorationColor: "#4faaa7",
+                // textDecoration: "underline",
+                // textDecorationColor: "#4faaa7",
               }}
               md={4}
             >

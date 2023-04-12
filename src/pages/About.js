@@ -20,8 +20,7 @@ const About = () => {
                 style={{ fontSize: 75, fontWeight: 700, color: "#C6460F" }}
                 className="header-font"
               >
-                Kenney Heidel, Master Copywriter, Lover of Cats, Juggler of
-                Words at Martin Agency
+                It Appears You're In Need Of Some Wordsmithery...
               </h1>
             </Slide>
           </Col>
@@ -35,34 +34,44 @@ const About = () => {
         >
           <Col className="mb-5 m-5" style={{ color: "white", fontWeight: 500 }}>
             <Fade>
+              <p>Ready to sound fantastic? I can help.</p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Exercitationem, rerum. Aspernatur fugiat laborum sunt a numquam
-                obcaecati, inventore aperiam deleniti quia at ullam eveniet
-                beatae assumenda voluptates, laboriosam labore ad. Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Non cupiditate
-                blanditiis fugit a maxime? Libero voluptatem blanditiis at
-                consequatur labore nam voluptas corrupti explicabo! Soluta,
-                quidem omnis? Error, consectetur iste!
+                My background in traveling the world has taught me how to step
+                into a million different shoes and understand what makes people
+                tick at each stage of their journey. Maybe it’s also the reason
+                I have two closets dedicated to sandals and sneakers.
               </p>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                quae amet, adipisci quasi beatae unde ipsum! Nisi harum, amet
-                autem labore reiciendis minus, dolor veniam sequi omnis esse sed
-                nostrum?Lorem, ipsum dolor sit amet consectetur adipisicing
-                elit. Tempore rerum animi illum illo eaque sapiente maxime
-                natus, nemo eligendi ipsam, atque nihil. Aliquam cumque dolores
-                dolore praesentium exercitationem neque nisi.
+                As an award-winning Communications Specialist, Copywriter, and
+                Strategist, located in Richmond, Virginia, I have extensive
+                experience in getting under the skin of a brand…in a
+                non-Silence-of-the-Lambs kinda way.
               </p>
+              <p>
+                Whether it’s email marketing, digital campaigns, snappy social
+                media content, or perfectly placed print ads, I describe my copy
+                as a potion of good literacy, a slightly gaga imagination, and
+                an acute understanding of human nature and its intense need to
+                engage with complex ideas in their simplest form.
+              </p>
+              <p>
+                I’ve written words and crafted ideas for a wide variety of
+                industries, storytelling for medical marketing, government
+                agencies, food and beverage companies, luxury pet care, and
+                more. I’m also a killer at any pun-off and an off-tempo but
+                enthusiastic dancer.
+              </p>
+              <p>So, come on, send me an email.</p>
+              <p>I’m ready to create something amazing with you.</p>
             </Fade>
           </Col>
           {/* headshot of ken */}
-          <Col className="m-0 p-0 text-center">
+          <Col className="text-center">
             <img
               src={headshot}
               alt="Headshot of Kennedy Heidel"
-              style={{ width: "20rem", borderRadius: 50 }}
-              className="ms-auto "
+              style={{ width: "30rem", borderRadius: 50 }}
+              className="m-auto "
             />
           </Col>
         </Row>
@@ -100,7 +109,7 @@ const About = () => {
                 size="lg"
                 style={{ width: "15rem" }}
               >
-                RESUME
+                Resume
               </Button>
             </Link>
           </Col>
